@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Linux学习</title>
+    <url>/2024/08/14/posts-1/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>更新日志</title>
     <url>/2024/08/16/posts-2/</url>
     <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
@@ -49,14 +57,6 @@
 ]]></content>
       <tags>
         <tag>Machine Learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/posts-1/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
 </search>
