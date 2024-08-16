@@ -14,6 +14,7 @@
     <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
 <li>添加新域名解析，解决waline国内无法评论问题</li>
 <li>修复post无法显示图片</li>
+<li>修复CDN导致右下角按钮失效问题</li>
 </ol>
 ]]></content>
       <tags>
