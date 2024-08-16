@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Linux学习</title>
+    <url>/2024/08/14/posts-1/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更新日志</title>
+    <url>/2024/08/16/posts-2/</url>
+    <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
+<li>添加新域名解析，解决waline国内无法评论问题</li>
+<li>修复post无法显示图片</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>更新日志</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linear Regression</title>
     <url>/2024/08/15/posts/</url>
     <content><![CDATA[<h1 id="机器学习线性回归复现"><a href="#机器学习线性回归复现" class="headerlink" title="机器学习线性回归复现"></a>机器学习线性回归复现</h1><h2 id="预测函数"><a href="#预测函数" class="headerlink" title="预测函数"></a>预测函数</h2><p>$$<br>y_\theta(x)&#x3D;\theta_0x+\theta_1b<br>$$</p>
@@ -36,14 +56,6 @@
 ]]></content>
       <tags>
         <tag>Machine Learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/posts-1/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
 </search>
