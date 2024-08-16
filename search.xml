@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Linux学习</title>
+    <url>/2024/08/14/posts-1/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linear Regression</title>
     <url>/2024/08/15/posts/</url>
     <content><![CDATA[<h1 id="机器学习线性回归复现"><a href="#机器学习线性回归复现" class="headerlink" title="机器学习线性回归复现"></a>机器学习线性回归复现</h1><h2 id="预测函数"><a href="#预测函数" class="headerlink" title="预测函数"></a>预测函数</h2><p>$$<br>y_\theta(x)&#x3D;\theta_0x+\theta_1b<br>$$</p>
@@ -36,14 +44,6 @@
 ]]></content>
       <tags>
         <tag>Machine Learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/posts-1/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
 </search>
