@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>nice_tools</title>
-    <url>/2024/08/18/nice-tools/</url>
-    <content><![CDATA[<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p>[Claudecd]<a href="https://kelaode.ai/">https://kelaode.ai/</a></p>
-]]></content>
-      <categories>
-        <category>tools</category>
-      </categories>
-      <tags>
-        <tag>tools</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>更新日志</title>
-    <url>/2024/08/16/update/</url>
-    <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
-<li>添加新域名解析，解决waline国内无法评论问题</li>
-<li>修复post无法显示图片</li>
-<li>修复CDN导致右下角按钮失效问题</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>更新日志</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>深度学习记录</title>
     <url>/2024/08/18/DeepLearning_record/</url>
     <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><p>2024&#x2F;8&#x2F;18</p>
@@ -85,6 +52,39 @@
       </categories>
       <tags>
         <tag>Machine Learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>nice_tools</title>
+    <url>/2024/08/18/nice-tools/</url>
+    <content><![CDATA[<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai/</a></p>
+]]></content>
+      <categories>
+        <category>tools</category>
+      </categories>
+      <tags>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更新日志</title>
+    <url>/2024/08/16/update/</url>
+    <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
+<li>添加新域名解析，解决waline国内无法评论问题</li>
+<li>修复post无法显示图片</li>
+<li>修复CDN导致右下角按钮失效问题</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>更新日志</tag>
       </tags>
   </entry>
 </search>
