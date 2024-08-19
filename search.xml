@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>深度学习记录</title>
-    <url>/2024/08/18/DeepLearning_record/</url>
-    <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><p>2024&#x2F;8&#x2F;18</p>
-<p>​	1. 完成conda、pytorch环境配置</p>
-]]></content>
+    <title>数据结构</title>
+    <url>/2024/08/19/DSlearning/</url>
+    <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h3 id="数据结构-https-totuma-cn"><a href="#数据结构-https-totuma-cn" class="headerlink" title="[数据结构]https://totuma.cn/"></a>[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>]]></content>
       <categories>
-        <category>深度学习</category>
+        <category>数据结构</category>
       </categories>
       <tags>
-        <tag>深度学习</tag>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python爬虫</title>
+    <url>/2024/08/19/Spider/</url>
+    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1><h3 id="learn-python3-spider-https-github-com-wistbean-learn-python3-spider"><a href="#learn-python3-spider-https-github-com-wistbean-learn-python3-spider" class="headerlink" title="[learn_python3_spider]https://github.com/wistbean/learn_python3_spider"></a>[learn_python3_spider]<a href="https://github.com/wistbean/learn_python3_spider">https://github.com/wistbean/learn_python3_spider</a></h3>]]></content>
+      <categories>
+        <category>Python爬虫</category>
+      </categories>
+      <tags>
+        <tag>Python爬虫</tag>
       </tags>
   </entry>
   <entry>
@@ -55,14 +64,24 @@
       </tags>
   </entry>
   <entry>
-    <title>Python爬虫</title>
-    <url>/2024/08/19/Spider/</url>
-    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1><h3 id="learn-python3-spider-https-github-com-wistbean-learn-python3-spider"><a href="#learn-python3-spider-https-github-com-wistbean-learn-python3-spider" class="headerlink" title="[learn_python3_spider]https://github.com/wistbean/learn_python3_spider"></a>[learn_python3_spider]<a href="https://github.com/wistbean/learn_python3_spider">https://github.com/wistbean/learn_python3_spider</a></h3>]]></content>
+    <title>深度学习记录</title>
+    <url>/2024/08/18/DeepLearning_record/</url>
+    <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><p>2024&#x2F;8&#x2F;18</p>
+<p>​	1. 完成conda、pytorch环境配置</p>
+]]></content>
       <categories>
-        <category>Python爬虫</category>
+        <category>深度学习</category>
       </categories>
       <tags>
-        <tag>Python爬虫</tag>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -87,14 +106,6 @@
 ]]></content>
       <tags>
         <tag>更新日志</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
 </search>
