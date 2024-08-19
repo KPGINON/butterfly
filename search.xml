@@ -14,25 +14,6 @@
       </tags>
   </entry>
   <entry>
-    <title>SpiderLearning</title>
-    <url>/2024/08/19/Spider/</url>
-    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1><h3 id="learn-python3-spider-https-github-com-wistbean-learn-python3-spider"><a href="#learn-python3-spider-https-github-com-wistbean-learn-python3-spider" class="headerlink" title="[learn_python3_spider]https://github.com/wistbean/learn_python3_spider"></a>[learn_python3_spider]<a href="https://github.com/wistbean/learn_python3_spider">https://github.com/wistbean/learn_python3_spider</a></h3>]]></content>
-      <categories>
-        <category>SpriderLearning</category>
-      </categories>
-      <tags>
-        <tag>SpiderLearning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linear Regression</title>
     <url>/2024/08/15/LinearRegression/</url>
     <content><![CDATA[<h1 id="机器学习线性回归复现"><a href="#机器学习线性回归复现" class="headerlink" title="机器学习线性回归复现"></a>机器学习线性回归复现</h1><h2 id="预测函数"><a href="#预测函数" class="headerlink" title="预测函数"></a>预测函数</h2><p>$$<br>y_\theta(x)&#x3D;\theta_0x+\theta_1b<br>$$</p>
@@ -74,6 +55,17 @@
       </tags>
   </entry>
   <entry>
+    <title>Python爬虫</title>
+    <url>/2024/08/19/Spider/</url>
+    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1><h3 id="learn-python3-spider-https-github-com-wistbean-learn-python3-spider"><a href="#learn-python3-spider-https-github-com-wistbean-learn-python3-spider" class="headerlink" title="[learn_python3_spider]https://github.com/wistbean/learn_python3_spider"></a>[learn_python3_spider]<a href="https://github.com/wistbean/learn_python3_spider">https://github.com/wistbean/learn_python3_spider</a></h3>]]></content>
+      <categories>
+        <category>Python爬虫</category>
+      </categories>
+      <tags>
+        <tag>Python爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>实用工具</title>
     <url>/2024/08/18/Tools/</url>
     <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3>]]></content>
@@ -95,6 +87,14 @@
 ]]></content>
       <tags>
         <tag>更新日志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
 </search>
