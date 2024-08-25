@@ -1,61 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>数据结构</title>
-    <url>/2024/08/19/DSlearning/</url>
-    <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h3 id="数据结构-https-totuma-cn"><a href="#数据结构-https-totuma-cn" class="headerlink" title="[数据结构]https://totuma.cn/"></a>[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习记录</title>
-    <url>/2024/08/18/DeepLearning_record/</url>
-    <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><p>2024&#x2F;8&#x2F;18</p>
-<p>​	1. 完成conda、pytorch环境配置</p>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linear Regression</title>
     <url>/2024/08/15/LinearRegression/</url>
-    <content><![CDATA[<h1 id="机器学习线性回归复现"><a href="#机器学习线性回归复现" class="headerlink" title="机器学习线性回归复现"></a>机器学习线性回归复现</h1><h2 id="预测函数"><a href="#预测函数" class="headerlink" title="预测函数"></a>预测函数</h2><p>$$<br>y_\theta(x)&#x3D;\theta_0x+\theta_1b<br>$$</p>
-<h3 id="n元线性回归"><a href="#n元线性回归" class="headerlink" title="n元线性回归"></a>n元线性回归</h3><p>$$<br>h_\theta(x)&#x3D;\theta_0+\theta_1x1+\theta_2x2<br>$$</p>
-<p>$$<br>h_\theta(x)&#x3D;\sum^n_{i&#x3D;0}{\theta_ix_i}&#x3D; \theta^Tx<br>$$</p>
-<h2 id="损失函数-cost-function"><a href="#损失函数-cost-function" class="headerlink" title="损失函数 cost function"></a>损失函数 cost function</h2><p>$$<br>J(\theta_0,\theta_1,….,\theta_n) &#x3D; {1\over{2m}}\sum^{m}_{i&#x3D;1}(h\theta(x^i)-y^i)^2<br>$$</p>
-<h2 id="梯度下降法"><a href="#梯度下降法" class="headerlink" title="梯度下降法"></a>梯度下降法</h2><p>$$<br>\theta_j :&#x3D; \theta_j-\alpha{\partial\over\partial\theta_j}(\theta_0,\theta_i)<br>$$</p>
-<h2 id="Python实现"><a href="#Python实现" class="headerlink" title="Python实现"></a>Python实现</h2><p>安装相关库</p>
+    <content><![CDATA[<h1>机器学习线性回归复现</h1>
+<h2 id="预测函数">预测函数</h2>
+<p>$$<br>
+y_\theta(x)=\theta_0x+\theta_1b<br>
+$$</p>
+<h3 id="n元线性回归">n元线性回归</h3>
+<p>$$<br>
+h_\theta(x)=\theta_0+\theta_1x1+\theta_2x2<br>
+$$</p>
+<p>$$<br>
+h_\theta(x)=\sum^n_{i=0}{\theta_ix_i}= \theta^Tx<br>
+$$</p>
+<h2 id="损失函数-cost-function">损失函数 cost function</h2>
+<p>$$<br>
+J(\theta_0,\theta_1,…,\theta_n) = {1\over{2m}}\sum^{m}_{i=1}(h\theta(x^i)-y^i)^2<br>
+$$</p>
+<h2 id="梯度下降法">梯度下降法</h2>
+<p>$$<br>
+\theta_j := \theta_j-\alpha{\partial\over\partial\theta_j}(\theta_0,\theta_i)<br>
+$$</p>
+<h2 id="Python实现">Python实现</h2>
+<p>安装相关库</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LinearRegression</span><br></pre></td></tr></table></figure>
-
 <p>准备数据</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = np.array([[<span class="number">32</span>, <span class="number">31</span>], [<span class="number">53</span>, <span class="number">68</span>], [<span class="number">61</span>, <span class="number">62</span>], [<span class="number">47</span>, <span class="number">71</span>], [<span class="number">59</span>, <span class="number">87</span>], [<span class="number">55</span>, <span class="number">78</span>], [<span class="number">52</span>, <span class="number">79</span>], [<span class="number">39</span>, <span class="number">59</span>], [<span class="number">48</span>, <span class="number">75</span>], [<span class="number">52</span>, <span class="number">71</span>],</span><br><span class="line">                     [<span class="number">45</span>, <span class="number">55</span>], [<span class="number">54</span>, <span class="number">82</span>], [<span class="number">44</span>, <span class="number">62</span>], [<span class="number">58</span>, <span class="number">75</span>], [<span class="number">56</span>, <span class="number">81</span>], [<span class="number">48</span>, <span class="number">60</span>], [<span class="number">44</span>, <span class="number">82</span>], [<span class="number">60</span>, <span class="number">97</span>], [<span class="number">45</span>, <span class="number">48</span>], [<span class="number">38</span>, <span class="number">56</span>],</span><br><span class="line">                     [<span class="number">66</span>, <span class="number">83</span>], [<span class="number">65</span>, <span class="number">118</span>], [<span class="number">47</span>, <span class="number">57</span>], [<span class="number">41</span>, <span class="number">51</span>], [<span class="number">51</span>, <span class="number">75</span>], [<span class="number">59</span>, <span class="number">74</span>], [<span class="number">57</span>, <span class="number">95</span>], [<span class="number">63</span>, <span class="number">95</span>], [<span class="number">46</span>, <span class="number">79</span>],</span><br><span class="line">                     [<span class="number">50</span>, <span class="number">83</span>]])</span><br></pre></td></tr></table></figure>
-
 <p>读取数据</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = data[:,<span class="number">0</span>]</span><br><span class="line">y = data[:,<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
-
 <p>定义损失函数</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">cost</span> (w,b,data):</span><br><span class="line">    total_cost = <span class="number">0</span></span><br><span class="line">    m = <span class="built_in">len</span>(data)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(m):</span><br><span class="line">        x = data[i, <span class="number">0</span>]</span><br><span class="line">        y = data[i, <span class="number">1</span>]</span><br><span class="line">        total_cost += (w * x + b) - y</span><br><span class="line">    <span class="keyword">return</span> total_cost / m</span><br></pre></td></tr></table></figure>
-
 <p>对数据进行reshape</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_new = x.reshape(-<span class="number">1</span>,<span class="number">1</span>)</span><br><span class="line">y_new = y.reshape(-<span class="number">1</span>,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
 <p>使用模型获取w,b参数</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">lr = LinearRegression()</span><br><span class="line">lr.fit(x_new,y_new)</span><br><span class="line">w = lr.coef_[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line">b = lr.intercept_[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
-
 <p>调用损失函数</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cost = cost(w, b, data)</span><br></pre></td></tr></table></figure>
-
 <p>绘制图形</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.scatter(x,y)</span><br><span class="line">pred_y = w * x + b</span><br><span class="line">plt.plot(x,pred_y,c=<span class="string">&#x27;r&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-
 <p><img src="/img/linear_regression.png" alt="运行结果"></p>
 ]]></content>
       <categories>
@@ -68,15 +52,46 @@
   <entry>
     <title>Linux学习</title>
     <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+    <content><![CDATA[<h1>学习linux专用</h1>
+]]></content>
       <tags>
         <tag>linux</tag>
       </tags>
   </entry>
   <entry>
+    <title>深度学习记录</title>
+    <url>/2024/08/18/DeepLearning_record/</url>
+    <content><![CDATA[<h1>深度学习记录</h1>
+<h3 id="Github学习链接-https-github-com-AccumulateMore-CV">[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3>
+<p>2024/8/18</p>
+<p>​	1. 完成conda、pytorch环境配置</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构</title>
+    <url>/2024/08/19/DSlearning/</url>
+    <content><![CDATA[<h1>数据结构</h1>
+<h3 id="数据结构-https-totuma-cn">[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python爬虫</title>
     <url>/2024/08/19/Spider/</url>
-    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1><h3 id="learn-python3-spider-https-github-com-wistbean-learn-python3-spider"><a href="#learn-python3-spider-https-github-com-wistbean-learn-python3-spider" class="headerlink" title="[learn_python3_spider]https://github.com/wistbean/learn_python3_spider"></a>[learn_python3_spider]<a href="https://github.com/wistbean/learn_python3_spider">https://github.com/wistbean/learn_python3_spider</a></h3>]]></content>
+    <content><![CDATA[<h1>爬虫学习</h1>
+<h3 id="learn-python3-spider-https-github-com-wistbean-learn-python3-spider">[learn_python3_spider]<a href="https://github.com/wistbean/learn_python3_spider">https://github.com/wistbean/learn_python3_spider</a></h3>
+]]></content>
       <categories>
         <category>Python爬虫</category>
       </categories>
@@ -87,12 +102,15 @@
   <entry>
     <title>实用工具</title>
     <url>/2024/08/18/Tools/</url>
-    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
+    <content><![CDATA[<h1>工具助手</h1>
+<h3 id="ClaudeShare-https-kelaode-ai">[ClaudeShare]<a href="https://kelaode.ai">https://kelaode.ai</a></h3>
+<h3 id="CSDNreader-https-doc-leonx-cn">[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>
+]]></content>
       <categories>
-        <category>Tools</category>
+        <category>工具</category>
       </categories>
       <tags>
-        <tag>Tools</tag>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -110,16 +128,20 @@
   <entry>
     <title>kemu1</title>
     <url>/2024/08/25/kemuyi/</url>
-    <content><![CDATA[<h1 id="详细交通违法行为记分分值分类"><a href="#详细交通违法行为记分分值分类" class="headerlink" title="详细交通违法行为记分分值分类"></a>详细交通违法行为记分分值分类</h1><h2 id="一次记12分"><a href="#一次记12分" class="headerlink" title="一次记12分:"></a>一次记12分:</h2><ol>
+    <content><![CDATA[<h1>详细交通违法行为记分分值分类</h1>
+<h2 id="一次记12分">一次记12分:</h2>
+<ol>
 <li>饮酒后驾驶机动车</li>
 <li>造成致人轻伤以上或死亡的交通事故后逃逸（不构成犯罪）</li>
 <li>使用伪造、变造的机动车号牌、行驶证、驾驶证、校车标牌或使用其他机动车号牌、行驶证</li>
-<li>超载:<ul>
+<li>超载:
+<ul>
 <li>校车、公路客运汽车、旅游客运汽车载人超过核定人数20%以上</li>
 <li>其他载客汽车载人超过核定人数100%以上</li>
 </ul>
 </li>
-<li>超速:<ul>
+<li>超速:
+<ul>
 <li>校车、中型以上载客载货汽车、危险物品运输车辆在高速公路、城市快速路上超速20%以上</li>
 <li>其他机动车在高速公路、城市快速路上超速50%以上</li>
 </ul>
@@ -127,7 +149,8 @@
 <li>在高速公路、城市快速路上倒车、逆行、穿越中央分隔带掉头</li>
 <li>代替实际机动车驾驶人接受交通违法行为处罚和记分牟取经济利益</li>
 </ol>
-<h2 id="一次记9分"><a href="#一次记9分" class="headerlink" title="一次记9分:"></a>一次记9分:</h2><ol>
+<h2 id="一次记9分">一次记9分:</h2>
+<ol>
 <li>7座以上载客汽车载人超过核定人数50%以上未达100%</li>
 <li>校车、中型以上载客载货汽车、危险物品运输车辆在非高速公路、城市快速路上超速50%以上</li>
 <li>在高速公路或城市快速路上违法停车</li>
@@ -136,14 +159,17 @@
 <li>未取得校车驾驶资格驾驶校车</li>
 <li>连续驾驶中型以上载客汽车、危险物品运输车辆超过4小时未停车休息或休息不足20分钟</li>
 </ol>
-<h2 id="一次记6分"><a href="#一次记6分" class="headerlink" title="一次记6分:"></a>一次记6分:</h2><ol>
-<li>超载:<ul>
+<h2 id="一次记6分">一次记6分:</h2>
+<ol>
+<li>超载:
+<ul>
 <li>校车、公路客运汽车、旅游客运汽车载人超核定人数未达20%</li>
 <li>7座以上载客汽车载人超核定人数20%以上未达50%</li>
 <li>其他载客汽车载人超核定人数50%以上未达100%</li>
 </ul>
 </li>
-<li>超速:<ul>
+<li>超速:
+<ul>
 <li>校车等在高速公路、城市快速路上超速未达20%</li>
 <li>校车等在其他道路上超速20%以上未达50%</li>
 <li>其他机动车在高速公路、城市快速路上超速20%以上未达50%</li>
@@ -159,7 +185,8 @@
 <li>造成轻微伤或财产损失的交通事故后逃逸（不构成犯罪）</li>
 <li>在高速公路或城市快速路上违法占用应急车道行驶</li>
 </ol>
-<h2 id="一次记3分"><a href="#一次记3分" class="headerlink" title="一次记3分:"></a>一次记3分:</h2><ol>
+<h2 id="一次记3分">一次记3分:</h2>
+<ol>
 <li>其他载客汽车载人超过核定人数20%以上未达50%</li>
 <li>校车等以外的机动车在非高速公路、城市快速路上超速20%以上未达50%</li>
 <li>在高速公路或城市快速路上不按规定车道行驶</li>
@@ -176,7 +203,8 @@
 <li>连续驾驶载货汽车超4小时未停车休息或休息不足20分钟</li>
 <li>在高速公路上行驶低于规定最低时速</li>
 </ol>
-<h2 id="一次记1分"><a href="#一次记1分" class="headerlink" title="一次记1分:"></a>一次记1分:</h2><ol>
+<h2 id="一次记1分">一次记1分:</h2>
+<ol>
 <li>校车等在非高速公路、城市快速路上超速10%以上未达20%</li>
 <li>不按规定会车，或在非高速公路、城市快速路上不按规定倒车、掉头</li>
 <li>不按规定使用灯光</li>
@@ -196,7 +224,9 @@
   <entry>
     <title>更新日志</title>
     <url>/2024/08/16/update/</url>
-    <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
+    <content><![CDATA[<h1>更新日志</h1>
+<h2 id="2024-8-16">2024/8/16</h2>
+<ol>
 <li>添加新域名解析，解决waline国内无法评论问题</li>
 <li>修复post无法显示图片</li>
 <li>修复CDN导致右下角按钮失效问题</li>
