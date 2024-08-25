@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>深度学习记录</title>
+    <url>/2024/08/18/DeepLearning_record/</url>
+    <content><![CDATA[<h1>深度学习记录</h1>
+<h3 id="Github学习链接-https-github-com-AccumulateMore-CV">[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3>
+<h3 id="DeepLearning复现-https-github-com-lucidrains">[DeepLearning复现]<a href="https://github.com/lucidrains">https://github.com/lucidrains</a></h3>
+<p>2024/8/18</p>
+<p>​	1. 完成conda、pytorch环境配置</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linear Regression</title>
     <url>/2024/08/15/LinearRegression/</url>
     <content><![CDATA[<h1>机器学习线性回归复现</h1>
@@ -59,18 +75,16 @@ $$</p>
       </tags>
   </entry>
   <entry>
-    <title>深度学习记录</title>
-    <url>/2024/08/18/DeepLearning_record/</url>
-    <content><![CDATA[<h1>深度学习记录</h1>
-<h3 id="Github学习链接-https-github-com-AccumulateMore-CV">[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3>
-<p>2024/8/18</p>
-<p>​	1. 完成conda、pytorch环境配置</p>
+    <title>Python爬虫</title>
+    <url>/2024/08/19/Spider/</url>
+    <content><![CDATA[<h1>爬虫学习</h1>
+<h3 id="learn-python3-spider-https-github-com-wistbean-learn-python3-spider">[learn_python3_spider]<a href="https://github.com/wistbean/learn_python3_spider">https://github.com/wistbean/learn_python3_spider</a></h3>
 ]]></content>
       <categories>
-        <category>深度学习</category>
+        <category>Python爬虫</category>
       </categories>
       <tags>
-        <tag>深度学习</tag>
+        <tag>Python爬虫</tag>
       </tags>
   </entry>
   <entry>
@@ -84,19 +98,6 @@ $$</p>
       </categories>
       <tags>
         <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python爬虫</title>
-    <url>/2024/08/19/Spider/</url>
-    <content><![CDATA[<h1>爬虫学习</h1>
-<h3 id="learn-python3-spider-https-github-com-wistbean-learn-python3-spider">[learn_python3_spider]<a href="https://github.com/wistbean/learn_python3_spider">https://github.com/wistbean/learn_python3_spider</a></h3>
-]]></content>
-      <categories>
-        <category>Python爬虫</category>
-      </categories>
-      <tags>
-        <tag>Python爬虫</tag>
       </tags>
   </entry>
   <entry>
