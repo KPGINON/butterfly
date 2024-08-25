@@ -12,11 +12,16 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+    <title>深度学习记录</title>
+    <url>/2024/08/18/DeepLearning_record/</url>
+    <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><p>2024&#x2F;8&#x2F;18</p>
+<p>​	1. 完成conda、pytorch环境配置</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
       <tags>
-        <tag>linux</tag>
+        <tag>深度学习</tag>
       </tags>
   </entry>
   <entry>
@@ -61,16 +66,11 @@
       </tags>
   </entry>
   <entry>
-    <title>深度学习记录</title>
-    <url>/2024/08/18/DeepLearning_record/</url>
-    <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><p>2024&#x2F;8&#x2F;18</p>
-<p>​	1. 完成conda、pytorch环境配置</p>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
       <tags>
-        <tag>深度学习</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -87,12 +87,24 @@
   <entry>
     <title>实用工具</title>
     <url>/2024/08/18/Tools/</url>
-    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3>]]></content>
+    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
       <categories>
         <category>Tools</category>
       </categories>
       <tags>
         <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人工智能面试CSDN专栏</title>
+    <url>/2024/08/25/interview/</url>
+    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/126857351">https://blog.csdn.net/zzh516451964zzh/article/details/126857351</a></p>
+]]></content>
+      <categories>
+        <category>面试</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
@@ -179,18 +191,6 @@
 ]]></content>
       <tags>
         <tag>kemu1</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人工智能面试CSDN专栏</title>
-    <url>/2024/08/25/interview/</url>
-    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/126857351">https://blog.csdn.net/zzh516451964zzh/article/details/126857351</a></p>
-]]></content>
-      <categories>
-        <category>面试</category>
-      </categories>
-      <tags>
-        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
