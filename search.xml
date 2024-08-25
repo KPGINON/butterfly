@@ -14,21 +14,6 @@
       </tags>
   </entry>
   <entry>
-    <title>深度学习记录</title>
-    <url>/2024/08/18/DeepLearning_record/</url>
-    <content><![CDATA[<h1>深度学习记录</h1>
-<h3 id="Github学习链接-https-github-com-AccumulateMore-CV">[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3>
-<p>2024/8/18</p>
-<p>​	1. 完成conda、pytorch环境配置</p>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linear Regression</title>
     <url>/2024/08/15/LinearRegression/</url>
     <content><![CDATA[<h1>机器学习线性回归复现</h1>
@@ -78,6 +63,21 @@ $$</p>
       </tags>
   </entry>
   <entry>
+    <title>深度学习记录</title>
+    <url>/2024/08/18/DeepLearning_record/</url>
+    <content><![CDATA[<h1>深度学习记录</h1>
+<h3 id="Github学习链接-https-github-com-AccumulateMore-CV">[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3>
+<p>2024/8/18</p>
+<p>​	1. 完成conda、pytorch环境配置</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux学习</title>
     <url>/2024/08/14/Linux/</url>
     <content><![CDATA[<h1>学习linux专用</h1>
@@ -97,6 +97,31 @@ $$</p>
       </categories>
       <tags>
         <tag>Python爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人工智能面试CSDN专栏</title>
+    <url>/2024/08/25/interview/</url>
+    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/123068619">https://blog.csdn.net/zzh516451964zzh/article/details/123068619</a></p>
+]]></content>
+      <categories>
+        <category>面试</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实用工具</title>
+    <url>/2024/08/18/Tools/</url>
+    <content><![CDATA[<h1>工具助手</h1>
+<h3 id="ClaudeShare-https-kelaode-ai">[ClaudeShare]<a href="https://kelaode.ai">https://kelaode.ai</a></h3>
+]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>Tools</tag>
       </tags>
   </entry>
   <entry>
@@ -208,19 +233,6 @@ $$</p>
 ]]></content>
       <tags>
         <tag>更新日志</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实用工具</title>
-    <url>/2024/08/18/Tools/</url>
-    <content><![CDATA[<h1>工具助手</h1>
-<h3 id="ClaudeShare-https-kelaode-ai">[ClaudeShare]<a href="https://kelaode.ai">https://kelaode.ai</a></h3>
-]]></content>
-      <categories>
-        <category>Tools</category>
-      </categories>
-      <tags>
-        <tag>Tools</tag>
       </tags>
   </entry>
 </search>
