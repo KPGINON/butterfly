@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>数据结构</title>
-    <url>/2024/08/19/DSlearning/</url>
-    <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h3 id="数据结构-https-totuma-cn"><a href="#数据结构-https-totuma-cn" class="headerlink" title="[数据结构]https://totuma.cn/"></a>[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>深度学习记录</title>
     <url>/2024/08/18/DeepLearning_record/</url>
     <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><h3 id="DeepLearning复现-https-github-com-lucidrains"><a href="#DeepLearning复现-https-github-com-lucidrains" class="headerlink" title="[DeepLearning复现]https://github.com/lucidrains"></a>[DeepLearning复现]<a href="https://github.com/lucidrains">https://github.com/lucidrains</a></h3><h3 id="动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md"><a href="#动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md" class="headerlink" title="[动手学深度学习]https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md"></a>[动手学深度学习]<a href="https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md">https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md</a></h3><h3 id="官方网站-https-zh-d2l-ai-chapter-preface-index-html"><a href="#官方网站-https-zh-d2l-ai-chapter-preface-index-html" class="headerlink" title="[官方网站]https://zh.d2l.ai/chapter_preface/index.html"></a>[官方网站]<a href="https://zh.d2l.ai/chapter_preface/index.html">https://zh.d2l.ai/chapter_preface/index.html</a></h3><h3 id="GitHub源码-https-github-com-d2l-ai-d2l-zh"><a href="#GitHub源码-https-github-com-d2l-ai-d2l-zh" class="headerlink" title="[GitHub源码]https://github.com/d2l-ai/d2l-zh"></a>[GitHub源码]<a href="https://github.com/d2l-ai/d2l-zh">https://github.com/d2l-ai/d2l-zh</a></h3><h3 id="哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497"><a href="#哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497" class="headerlink" title="[哔哩哔哩视频课]https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497"></a>[哔哩哔哩视频课]<a href="https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497">https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497</a></h3><p>2024&#x2F;8&#x2F;18</p>
@@ -30,6 +11,17 @@
       </categories>
       <tags>
         <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构</title>
+    <url>/2024/08/19/DSlearning/</url>
+    <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h3 id="数据结构-https-totuma-cn"><a href="#数据结构-https-totuma-cn" class="headerlink" title="[数据结构]https://totuma.cn/"></a>[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -74,9 +66,47 @@
       </tags>
   </entry>
   <entry>
+    <title>Yolo_test</title>
+    <url>/2024/09/05/Yolo-test/</url>
+    <content><![CDATA[<h1 id="yolo"><a href="#yolo" class="headerlink" title="yolo"></a>yolo</h1><h2 id="检查显卡可用性"><a href="#检查显卡可用性" class="headerlink" title="检查显卡可用性"></a>检查显卡可用性</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.is_available()</span><br><span class="line">cuda是否可用；</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.device_count()</span><br><span class="line">返回gpu数量；</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.get_device_name(0)</span><br><span class="line">返回gpu名字，设备索引默认从0开始；</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.current_device()</span><br><span class="line">返回当前设备索引；</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<blockquote>
+<blockquote>
+<p>torch.cuda.is_available()<br>False</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>nvcc -V 检查cuda版本</p>
+<h2 id="Known-issue-with-inference-using-CPU-on-Windows-for-PyTorch-2-4-0"><a href="#Known-issue-with-inference-using-CPU-on-Windows-for-PyTorch-2-4-0" class="headerlink" title="Known issue with inference using CPU on Windows for PyTorch 2.4.0"></a>Known issue with inference using CPU on Windows for PyTorch 2.4.0</h2><h2 id="Fixes"><a href="#Fixes" class="headerlink" title="Fixes"></a>Fixes</h2><ol>
+<li>Downgrade PyTorch (CPU) to a previous version</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cpu</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="2">
+<li>Install PyTorch with CUDA support, requires NVIDIA GPU with CUDA support</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
+
+<p>ERROR: pip’s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.<br>ultralytics 8.2.87 requires torch&lt;2.4.0,&gt;&#x3D;1.8.0; sys_platform &#x3D;&#x3D; “win32”, but you have torch 2.4.1+cu121 which is incompatible.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Yolo</category>
+      </categories>
+      <tags>
+        <tag>Yolo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Yolo</title>
     <url>/2024/09/04/Yolo/</url>
-    <content><![CDATA[<h1 id="YoLo-v8"><a href="#YoLo-v8" class="headerlink" title="YoLo-v8"></a>YoLo-v8</h1><h3 id="Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction"><a href="#Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction" class="headerlink" title="[Yolo-v8_train]https://docs.ultralytics.com/modes/train/#introduction"></a>[Yolo-v8_train]<a href="https://docs.ultralytics.com/modes/train/#introduction">https://docs.ultralytics.com/modes/train/#introduction</a></h3>]]></content>
+    <content><![CDATA[<h1 id="YoLo-v8"><a href="#YoLo-v8" class="headerlink" title="YoLo-v8"></a>YoLo-v8</h1><h3 id="Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction"><a href="#Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction" class="headerlink" title="[Yolo-v8_train]https://docs.ultralytics.com/modes/train/#introduction"></a>[Yolo-v8_train]<a href="https://docs.ultralytics.com/modes/train/#introduction">https://docs.ultralytics.com/modes/train/#introduction</a></h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
       <categories>
         <category>Yolo-v8</category>
       </categories>
@@ -85,26 +115,11 @@
       </tags>
   </entry>
   <entry>
-    <title>人工智能面试CSDN专栏</title>
-    <url>/2024/08/25/interview/</url>
-    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/126857351">https://blog.csdn.net/zzh516451964zzh/article/details/126857351</a></p>
-]]></content>
-      <categories>
-        <category>面试</category>
-      </categories>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
       <tags>
-        <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python爬虫</title>
-    <url>/2024/08/19/Spider/</url>
-    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1>]]></content>
-      <categories>
-        <category>Python爬虫</category>
-      </categories>
-      <tags>
-        <tag>Python爬虫</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -129,6 +144,29 @@
       </categories>
       <tags>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python爬虫</title>
+    <url>/2024/08/19/Spider/</url>
+    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1>]]></content>
+      <categories>
+        <category>Python爬虫</category>
+      </categories>
+      <tags>
+        <tag>Python爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人工智能面试CSDN专栏</title>
+    <url>/2024/08/25/interview/</url>
+    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/126857351">https://blog.csdn.net/zzh516451964zzh/article/details/126857351</a></p>
+]]></content>
+      <categories>
+        <category>面试</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
       </tags>
   </entry>
 </search>
