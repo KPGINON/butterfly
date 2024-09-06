@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>深度学习记录</title>
-    <url>/2024/08/18/DeepLearning_record/</url>
-    <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><h3 id="DeepLearning复现-https-github-com-lucidrains"><a href="#DeepLearning复现-https-github-com-lucidrains" class="headerlink" title="[DeepLearning复现]https://github.com/lucidrains"></a>[DeepLearning复现]<a href="https://github.com/lucidrains">https://github.com/lucidrains</a></h3><h3 id="动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md"><a href="#动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md" class="headerlink" title="[动手学深度学习]https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md"></a>[动手学深度学习]<a href="https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md">https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md</a></h3><h3 id="官方网站-https-zh-d2l-ai-chapter-preface-index-html"><a href="#官方网站-https-zh-d2l-ai-chapter-preface-index-html" class="headerlink" title="[官方网站]https://zh.d2l.ai/chapter_preface/index.html"></a>[官方网站]<a href="https://zh.d2l.ai/chapter_preface/index.html">https://zh.d2l.ai/chapter_preface/index.html</a></h3><h3 id="GitHub源码-https-github-com-d2l-ai-d2l-zh"><a href="#GitHub源码-https-github-com-d2l-ai-d2l-zh" class="headerlink" title="[GitHub源码]https://github.com/d2l-ai/d2l-zh"></a>[GitHub源码]<a href="https://github.com/d2l-ai/d2l-zh">https://github.com/d2l-ai/d2l-zh</a></h3><h3 id="哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497"><a href="#哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497" class="headerlink" title="[哔哩哔哩视频课]https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497"></a>[哔哩哔哩视频课]<a href="https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497">https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497</a></h3><p>2024&#x2F;8&#x2F;18</p>
-<p>​	1. 完成conda、pytorch环境配置</p>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数据结构</title>
     <url>/2024/08/19/DSlearning/</url>
     <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h3 id="数据结构-https-totuma-cn"><a href="#数据结构-https-totuma-cn" class="headerlink" title="[数据结构]https://totuma.cn/"></a>[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>]]></content>
@@ -66,6 +53,30 @@
       </tags>
   </entry>
   <entry>
+    <title>深度学习记录</title>
+    <url>/2024/08/18/DeepLearning_record/</url>
+    <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><h3 id="DeepLearning复现-https-github-com-lucidrains"><a href="#DeepLearning复现-https-github-com-lucidrains" class="headerlink" title="[DeepLearning复现]https://github.com/lucidrains"></a>[DeepLearning复现]<a href="https://github.com/lucidrains">https://github.com/lucidrains</a></h3><h3 id="动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md"><a href="#动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md" class="headerlink" title="[动手学深度学习]https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md"></a>[动手学深度学习]<a href="https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md">https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md</a></h3><h3 id="官方网站-https-zh-d2l-ai-chapter-preface-index-html"><a href="#官方网站-https-zh-d2l-ai-chapter-preface-index-html" class="headerlink" title="[官方网站]https://zh.d2l.ai/chapter_preface/index.html"></a>[官方网站]<a href="https://zh.d2l.ai/chapter_preface/index.html">https://zh.d2l.ai/chapter_preface/index.html</a></h3><h3 id="GitHub源码-https-github-com-d2l-ai-d2l-zh"><a href="#GitHub源码-https-github-com-d2l-ai-d2l-zh" class="headerlink" title="[GitHub源码]https://github.com/d2l-ai/d2l-zh"></a>[GitHub源码]<a href="https://github.com/d2l-ai/d2l-zh">https://github.com/d2l-ai/d2l-zh</a></h3><h3 id="哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497"><a href="#哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497" class="headerlink" title="[哔哩哔哩视频课]https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497"></a>[哔哩哔哩视频课]<a href="https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497">https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497</a></h3><p>2024&#x2F;8&#x2F;18</p>
+<p>​	1. 完成conda、pytorch环境配置</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python爬虫</title>
+    <url>/2024/08/19/Spider/</url>
+    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1>]]></content>
+      <categories>
+        <category>Python爬虫</category>
+      </categories>
+      <tags>
+        <tag>Python爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux学习</title>
     <url>/2024/08/14/Linux/</url>
     <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
@@ -112,14 +123,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Python爬虫</title>
-    <url>/2024/08/19/Spider/</url>
-    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1>]]></content>
+    <title>实用工具</title>
+    <url>/2024/08/18/Tools/</url>
+    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
       <categories>
-        <category>Python爬虫</category>
+        <category>工具</category>
       </categories>
       <tags>
-        <tag>Python爬虫</tag>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -131,19 +142,6 @@
       </categories>
       <tags>
         <tag>Yolo-v8</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>更新日志</title>
-    <url>/2024/08/16/update/</url>
-    <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
-<li>添加新域名解析，解决waline国内无法评论问题</li>
-<li>修复post无法显示图片</li>
-<li>修复CDN导致右下角按钮失效问题</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>更新日志</tag>
       </tags>
   </entry>
   <entry>
@@ -181,14 +179,16 @@
       </tags>
   </entry>
   <entry>
-    <title>实用工具</title>
-    <url>/2024/08/18/Tools/</url>
-    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
+    <title>更新日志</title>
+    <url>/2024/08/16/update/</url>
+    <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
+<li>添加新域名解析，解决waline国内无法评论问题</li>
+<li>修复post无法显示图片</li>
+<li>修复CDN导致右下角按钮失效问题</li>
+</ol>
+]]></content>
       <tags>
-        <tag>工具</tag>
+        <tag>更新日志</tag>
       </tags>
   </entry>
 </search>
