@@ -25,14 +25,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linear Regression</title>
     <url>/2024/08/15/LinearRegression/</url>
     <content><![CDATA[<h1 id="机器学习线性回归复现"><a href="#机器学习线性回归复现" class="headerlink" title="机器学习线性回归复现"></a>机器学习线性回归复现</h1><h2 id="预测函数"><a href="#预测函数" class="headerlink" title="预测函数"></a>预测函数</h2><p>$$<br>y_\theta(x)&#x3D;\theta_0x+\theta_1b<br>$$</p>
@@ -82,6 +74,14 @@
       </categories>
       <tags>
         <tag>Python爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -170,7 +170,7 @@
       </tags>
   </entry>
   <entry>
-    <title>yolo</title>
+    <title>yolo部分</title>
     <url>/2024/09/06/yolo-0/</url>
     <content><![CDATA[<h1 id="Yolo-helmet"><a href="#Yolo-helmet" class="headerlink" title="Yolo-helmet"></a>Yolo-helmet</h1><h2 id="准备数据集"><a href="#准备数据集" class="headerlink" title="准备数据集"></a>准备数据集</h2><p>kaggle中yolo格式的helmet数据集</p>
 <h2 id="导入yolo-v8"><a href="#导入yolo-v8" class="headerlink" title="导入yolo-v8"></a>导入yolo-v8</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ultralytics</span><br></pre></td></tr></table></figure>
@@ -182,8 +182,8 @@
 
 <h2 id="编写测试文件"><a href="#编写测试文件" class="headerlink" title="编写测试文件"></a>编写测试文件</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line">model = YOLO(<span class="string">&#x27;best.pt&#x27;</span>)</span><br><span class="line">model.predict(<span class="string">&#x27;testfile&#x27;</span>,save=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
 
-<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><h3 id="原视频"><a href="#原视频" class="headerlink" title="原视频"></a>原视频</h3><p><video src="C:/Users/21195/Desktop/helmet/helmet.mp4"  controls="controls" width="500" height="300"><video></p>
-<h3 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h3><p><video src="C:/Users/21195/Desktop/helmet/runs/detect/predict/helmet.avi"  controls="controls" width="500" height="300"><video></p>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><h3 id="原视频"><a href="#原视频" class="headerlink" title="原视频"></a>原视频</h3><p><video src="C:/Users/21195/Desktop/buterfly/heo/public/img/helmet.mp4"  controls="controls" width="500" height="300"><video></p>
+<h3 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h3><p><video src="C:/Users/21195/Desktop/buterfly/heo/public/img/helmet.avi"  controls="controls" width="500" height="300"><video></p>
 ]]></content>
       <categories>
         <category>Yolo-v8</category>
