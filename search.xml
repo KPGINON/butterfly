@@ -67,7 +67,7 @@
   </entry>
   <entry>
     <title>Yolo_test</title>
-    <url>/2024/09/05/Yolo-test/</url>
+    <url>/2024/09/05/Yolo-fix/</url>
     <content><![CDATA[<h1 id="yolo"><a href="#yolo" class="headerlink" title="yolo"></a>yolo</h1><h2 id="检查显卡可用性"><a href="#检查显卡可用性" class="headerlink" title="检查显卡可用性"></a>检查显卡可用性</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.is_available()</span><br><span class="line">cuda是否可用；</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.device_count()</span><br><span class="line">返回gpu数量；</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.get_device_name(0)</span><br><span class="line">返回gpu名字，设备索引默认从0开始；</span><br></pre></td></tr></table></figure>
@@ -115,24 +115,22 @@
       </tags>
   </entry>
   <entry>
+    <title>Python爬虫</title>
+    <url>/2024/08/19/Spider/</url>
+    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1>]]></content>
+      <categories>
+        <category>Python爬虫</category>
+      </categories>
+      <tags>
+        <tag>Python爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux学习</title>
     <url>/2024/08/14/Linux/</url>
     <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
       <tags>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>更新日志</title>
-    <url>/2024/08/16/update/</url>
-    <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
-<li>添加新域名解析，解决waline国内无法评论问题</li>
-<li>修复post无法显示图片</li>
-<li>修复CDN导致右下角按钮失效问题</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>更新日志</tag>
       </tags>
   </entry>
   <entry>
@@ -147,14 +145,26 @@
       </tags>
   </entry>
   <entry>
-    <title>Python爬虫</title>
-    <url>/2024/08/19/Spider/</url>
-    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1>]]></content>
+    <title>yolo</title>
+    <url>/2024/09/06/yolo-0/</url>
+    <content><![CDATA[<h1 id="Yolo-helmet"><a href="#Yolo-helmet" class="headerlink" title="Yolo-helmet"></a>Yolo-helmet</h1><h2 id="准备数据集"><a href="#准备数据集" class="headerlink" title="准备数据集"></a>准备数据集</h2><p>kaggle中yolo格式的helmet数据集</p>
+<h2 id="导入yolo-v8"><a href="#导入yolo-v8" class="headerlink" title="导入yolo-v8"></a>导入yolo-v8</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ultralytics</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装cuda、torch…"><a href="#安装cuda、torch…" class="headerlink" title="安装cuda、torch…"></a>安装cuda、torch…</h2><h1 id="…"><a href="#…" class="headerlink" title="…."></a>….</h1><p>[error]&lt;<a href="https://zgoo.zeabur.app/2024/09/05/Yolo-test/">Yolo_test | ZG’s Web (zeabur.app)</a>&gt;</p>
+<h2 id="准备yaml文件"><a href="#准备yaml文件" class="headerlink" title="准备yaml文件"></a>准备yaml文件</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">train:</span> <span class="string">...</span></span><br><span class="line"><span class="attr">val:</span> <span class="string">...</span></span><br><span class="line"><span class="string">test</span> <span class="string">...</span></span><br><span class="line"><span class="string">nc</span> <span class="string">=</span> <span class="number">10</span></span><br><span class="line"><span class="attr">names:</span> [<span class="string">Hardhat</span>, <span class="string">Mask</span>, <span class="literal">NO</span><span class="string">-Hardhat</span>, <span class="literal">NO</span><span class="string">-Mask</span>, <span class="literal">NO</span><span class="string">-Safety</span> <span class="string">Vest</span>, <span class="string">Person</span>, <span class="string">Safety</span> <span class="string">Cone</span>, <span class="string">Safety</span> <span class="string">Vest</span>, <span class="string">machinery</span>, <span class="string">vehicle</span>]</span><br></pre></td></tr></table></figure>
+
+<h2 id="基于yolo-v8的coco模型训练helmet模型"><a href="#基于yolo-v8的coco模型训练helmet模型" class="headerlink" title="基于yolo-v8的coco模型训练helmet模型"></a>基于yolo-v8的coco模型训练helmet模型</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    model = YOLO(<span class="string">&#x27;yolov8n.pt&#x27;</span>)</span><br><span class="line">    model.to(<span class="string">&#x27;cuda&#x27;</span>)</span><br><span class="line">    model.train(data=<span class="string">&#x27;safehat.yaml&#x27;</span>, epochs=<span class="number">100</span>)</span><br><span class="line">    model.val()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+<h2 id="编写测试文件"><a href="#编写测试文件" class="headerlink" title="编写测试文件"></a>编写测试文件</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line">model = YOLO(<span class="string">&#x27;best.pt&#x27;</span>)</span><br><span class="line">model.predict(<span class="string">&#x27;testfile&#x27;</span>,save=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
       <categories>
-        <category>Python爬虫</category>
+        <category>yolo</category>
       </categories>
       <tags>
-        <tag>Python爬虫</tag>
+        <tag>yolo</tag>
       </tags>
   </entry>
   <entry>
@@ -167,6 +177,19 @@
       </categories>
       <tags>
         <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更新日志</title>
+    <url>/2024/08/16/update/</url>
+    <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
+<li>添加新域名解析，解决waline国内无法评论问题</li>
+<li>修复post无法显示图片</li>
+<li>修复CDN导致右下角按钮失效问题</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>更新日志</tag>
       </tags>
   </entry>
 </search>
