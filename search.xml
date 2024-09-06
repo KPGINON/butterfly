@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>数据结构</title>
-    <url>/2024/08/19/DSlearning/</url>
-    <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h3 id="数据结构-https-totuma-cn"><a href="#数据结构-https-totuma-cn" class="headerlink" title="[数据结构]https://totuma.cn/"></a>[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>深度学习记录</title>
     <url>/2024/08/18/DeepLearning_record/</url>
     <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><h3 id="DeepLearning复现-https-github-com-lucidrains"><a href="#DeepLearning复现-https-github-com-lucidrains" class="headerlink" title="[DeepLearning复现]https://github.com/lucidrains"></a>[DeepLearning复现]<a href="https://github.com/lucidrains">https://github.com/lucidrains</a></h3><h3 id="动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md"><a href="#动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md" class="headerlink" title="[动手学深度学习]https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md"></a>[动手学深度学习]<a href="https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md">https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md</a></h3><h3 id="官方网站-https-zh-d2l-ai-chapter-preface-index-html"><a href="#官方网站-https-zh-d2l-ai-chapter-preface-index-html" class="headerlink" title="[官方网站]https://zh.d2l.ai/chapter_preface/index.html"></a>[官方网站]<a href="https://zh.d2l.ai/chapter_preface/index.html">https://zh.d2l.ai/chapter_preface/index.html</a></h3><h3 id="GitHub源码-https-github-com-d2l-ai-d2l-zh"><a href="#GitHub源码-https-github-com-d2l-ai-d2l-zh" class="headerlink" title="[GitHub源码]https://github.com/d2l-ai/d2l-zh"></a>[GitHub源码]<a href="https://github.com/d2l-ai/d2l-zh">https://github.com/d2l-ai/d2l-zh</a></h3><h3 id="哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497"><a href="#哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497" class="headerlink" title="[哔哩哔哩视频课]https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497"></a>[哔哩哔哩视频课]<a href="https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497">https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497</a></h3><p>2024&#x2F;8&#x2F;18</p>
@@ -25,11 +14,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+    <title>数据结构</title>
+    <url>/2024/08/19/DSlearning/</url>
+    <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h3 id="数据结构-https-totuma-cn"><a href="#数据结构-https-totuma-cn" class="headerlink" title="[数据结构]https://totuma.cn/"></a>[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
       <tags>
-        <tag>linux</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -74,14 +66,14 @@
       </tags>
   </entry>
   <entry>
-    <title>实用工具</title>
-    <url>/2024/08/18/Tools/</url>
-    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
+    <title>Python爬虫</title>
+    <url>/2024/08/19/Spider/</url>
+    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1>]]></content>
       <categories>
-        <category>工具</category>
+        <category>Python爬虫</category>
       </categories>
       <tags>
-        <tag>工具</tag>
+        <tag>Python爬虫</tag>
       </tags>
   </entry>
   <entry>
@@ -123,26 +115,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Python爬虫</title>
-    <url>/2024/08/19/Spider/</url>
-    <content><![CDATA[<h1 id="爬虫学习"><a href="#爬虫学习" class="headerlink" title="爬虫学习"></a>爬虫学习</h1>]]></content>
+    <title>Yolo</title>
+    <url>/2024/09/04/Yolo/</url>
+    <content><![CDATA[<h1 id="YoLo-v8"><a href="#YoLo-v8" class="headerlink" title="YoLo-v8"></a>YoLo-v8</h1><h3 id="Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction"><a href="#Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction" class="headerlink" title="[Yolo-v8_train]https://docs.ultralytics.com/modes/train/#introduction"></a>[Yolo-v8_train]<a href="https://docs.ultralytics.com/modes/train/#introduction">https://docs.ultralytics.com/modes/train/#introduction</a></h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
       <categories>
-        <category>Python爬虫</category>
+        <category>Yolo-v8</category>
       </categories>
       <tags>
-        <tag>Python爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人工智能面试CSDN专栏</title>
-    <url>/2024/08/25/interview/</url>
-    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/126857351">https://blog.csdn.net/zzh516451964zzh/article/details/126857351</a></p>
-]]></content>
-      <categories>
-        <category>面试</category>
-      </categories>
-      <tags>
-        <tag>面试</tag>
+        <tag>Yolo-v8</tag>
       </tags>
   </entry>
   <entry>
@@ -159,14 +139,34 @@
       </tags>
   </entry>
   <entry>
-    <title>Yolo</title>
-    <url>/2024/09/04/Yolo/</url>
-    <content><![CDATA[<h1 id="YoLo-v8"><a href="#YoLo-v8" class="headerlink" title="YoLo-v8"></a>YoLo-v8</h1><h3 id="Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction"><a href="#Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction" class="headerlink" title="[Yolo-v8_train]https://docs.ultralytics.com/modes/train/#introduction"></a>[Yolo-v8_train]<a href="https://docs.ultralytics.com/modes/train/#introduction">https://docs.ultralytics.com/modes/train/#introduction</a></h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+    <title>人工智能面试CSDN专栏</title>
+    <url>/2024/08/25/interview/</url>
+    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/126857351">https://blog.csdn.net/zzh516451964zzh/article/details/126857351</a></p>
+]]></content>
       <categories>
-        <category>Yolo-v8</category>
+        <category>面试</category>
       </categories>
       <tags>
-        <tag>Yolo-v8</tag>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实用工具</title>
+    <url>/2024/08/18/Tools/</url>
+    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -182,8 +182,6 @@
 
 <h2 id="编写测试文件"><a href="#编写测试文件" class="headerlink" title="编写测试文件"></a>编写测试文件</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line">model = YOLO(<span class="string">&#x27;best.pt&#x27;</span>)</span><br><span class="line">model.predict(<span class="string">&#x27;testfile&#x27;</span>,save=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
 
-<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><h3 id="原视频"><a href="#原视频" class="headerlink" title="原视频"></a>原视频</h3><p><video src="/img/helmet.mp4"  controls="controls" width="500" height="300"><video></p>
-<h3 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h3><p><video src="/img/output.mp4"  controls="controls" width="500" height="300"><video></p>
 ]]></content>
       <categories>
         <category>Yolo-v8</category>
