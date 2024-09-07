@@ -12,6 +12,14 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linear Regression</title>
     <url>/2024/08/15/LinearRegression/</url>
     <content><![CDATA[<h1 id="机器学习线性回归复现"><a href="#机器学习线性回归复现" class="headerlink" title="机器学习线性回归复现"></a>机器学习线性回归复现</h1><h2 id="预测函数"><a href="#预测函数" class="headerlink" title="预测函数"></a>预测函数</h2><p>$$<br>y_\theta(x)&#x3D;\theta_0x+\theta_1b<br>$$</p>
@@ -77,6 +85,51 @@
       </tags>
   </entry>
   <entry>
+    <title>实用工具</title>
+    <url>/2024/08/18/Tools/</url>
+    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人工智能面试CSDN专栏</title>
+    <url>/2024/08/25/interview/</url>
+    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/126857351">https://blog.csdn.net/zzh516451964zzh/article/details/126857351</a></p>
+]]></content>
+      <categories>
+        <category>面试</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>yolo部分</title>
+    <url>/2024/09/06/yolo-0/</url>
+    <content><![CDATA[<h1 id="Yolo-helmet"><a href="#Yolo-helmet" class="headerlink" title="Yolo-helmet"></a>Yolo-helmet</h1><h2 id="准备数据集"><a href="#准备数据集" class="headerlink" title="准备数据集"></a>准备数据集</h2><p>kaggle中yolo格式的helmet数据集</p>
+<h2 id="导入yolo-v8"><a href="#导入yolo-v8" class="headerlink" title="导入yolo-v8"></a>导入yolo-v8</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ultralytics</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装cuda、torch…"><a href="#安装cuda、torch…" class="headerlink" title="安装cuda、torch…"></a>安装cuda、torch…</h2><h1 id="…"><a href="#…" class="headerlink" title="…."></a>….</h1><p>[error]<a href="https://zzggo.com/2024/09/05/Yolo-fix/">https://zzggo.com/2024/09/05/Yolo-fix/</a></p>
+<h2 id="准备yaml文件"><a href="#准备yaml文件" class="headerlink" title="准备yaml文件"></a>准备yaml文件</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">train:</span> <span class="string">...</span></span><br><span class="line"><span class="attr">val:</span> <span class="string">...</span></span><br><span class="line"><span class="string">test</span> <span class="string">...</span></span><br><span class="line"><span class="string">nc</span> <span class="string">=</span> <span class="number">10</span></span><br><span class="line"><span class="attr">names:</span> [<span class="string">Hardhat</span>, <span class="string">Mask</span>, <span class="literal">NO</span><span class="string">-Hardhat</span>, <span class="literal">NO</span><span class="string">-Mask</span>, <span class="literal">NO</span><span class="string">-Safety</span> <span class="string">Vest</span>, <span class="string">Person</span>, <span class="string">Safety</span> <span class="string">Cone</span>, <span class="string">Safety</span> <span class="string">Vest</span>, <span class="string">machinery</span>, <span class="string">vehicle</span>]</span><br></pre></td></tr></table></figure>
+
+<h2 id="基于yolo-v8的coco模型训练helmet模型"><a href="#基于yolo-v8的coco模型训练helmet模型" class="headerlink" title="基于yolo-v8的coco模型训练helmet模型"></a>基于yolo-v8的coco模型训练helmet模型</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    model = YOLO(<span class="string">&#x27;yolov8n.pt&#x27;</span>)</span><br><span class="line">    model.to(<span class="string">&#x27;cuda&#x27;</span>)</span><br><span class="line">    model.train(data=<span class="string">&#x27;safehat.yaml&#x27;</span>, epochs=<span class="number">100</span>)</span><br><span class="line">    model.val()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+<h2 id="编写测试文件"><a href="#编写测试文件" class="headerlink" title="编写测试文件"></a>编写测试文件</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line">model = YOLO(<span class="string">&#x27;best.pt&#x27;</span>)</span><br><span class="line">model.predict(<span class="string">&#x27;testfile&#x27;</span>,save=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="/img/test.jpg" alt="原始图片"><br><img src="/img/predict.jpg" alt="运行后图片"></p>
+]]></content>
+      <categories>
+        <category>Yolo-v8</category>
+      </categories>
+      <tags>
+        <tag>Yolo-v8</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Yolo_test</title>
     <url>/2024/09/05/Yolo-fix/</url>
     <content><![CDATA[<h1 id="yolo"><a href="#yolo" class="headerlink" title="yolo"></a>yolo</h1><h2 id="检查显卡可用性"><a href="#检查显卡可用性" class="headerlink" title="检查显卡可用性"></a>检查显卡可用性</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.is_available()</span><br><span class="line">cuda是否可用；</span><br></pre></td></tr></table></figure>
@@ -115,14 +168,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Yolo</title>
     <url>/2024/09/04/Yolo/</url>
     <content><![CDATA[<h1 id="YoLo-v8"><a href="#YoLo-v8" class="headerlink" title="YoLo-v8"></a>YoLo-v8</h1><h3 id="Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction"><a href="#Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction" class="headerlink" title="[Yolo-v8_train]https://docs.ultralytics.com/modes/train/#introduction"></a>[Yolo-v8_train]<a href="https://docs.ultralytics.com/modes/train/#introduction">https://docs.ultralytics.com/modes/train/#introduction</a></h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
@@ -131,40 +176,6 @@
       </categories>
       <tags>
         <tag>Yolo-v8</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>yolo部分</title>
-    <url>/2024/09/06/yolo-0/</url>
-    <content><![CDATA[<h1 id="Yolo-helmet"><a href="#Yolo-helmet" class="headerlink" title="Yolo-helmet"></a>Yolo-helmet</h1><h2 id="准备数据集"><a href="#准备数据集" class="headerlink" title="准备数据集"></a>准备数据集</h2><p>kaggle中yolo格式的helmet数据集</p>
-<h2 id="导入yolo-v8"><a href="#导入yolo-v8" class="headerlink" title="导入yolo-v8"></a>导入yolo-v8</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ultralytics</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装cuda、torch…"><a href="#安装cuda、torch…" class="headerlink" title="安装cuda、torch…"></a>安装cuda、torch…</h2><h1 id="…"><a href="#…" class="headerlink" title="…."></a>….</h1><p>[error]&lt;<a href="https://zzggo.com/2024/09/05/Yolo-test/">Yolo_test | ZG’s Web (zeabur.app)</a>&gt;</p>
-<h2 id="准备yaml文件"><a href="#准备yaml文件" class="headerlink" title="准备yaml文件"></a>准备yaml文件</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">train:</span> <span class="string">...</span></span><br><span class="line"><span class="attr">val:</span> <span class="string">...</span></span><br><span class="line"><span class="string">test</span> <span class="string">...</span></span><br><span class="line"><span class="string">nc</span> <span class="string">=</span> <span class="number">10</span></span><br><span class="line"><span class="attr">names:</span> [<span class="string">Hardhat</span>, <span class="string">Mask</span>, <span class="literal">NO</span><span class="string">-Hardhat</span>, <span class="literal">NO</span><span class="string">-Mask</span>, <span class="literal">NO</span><span class="string">-Safety</span> <span class="string">Vest</span>, <span class="string">Person</span>, <span class="string">Safety</span> <span class="string">Cone</span>, <span class="string">Safety</span> <span class="string">Vest</span>, <span class="string">machinery</span>, <span class="string">vehicle</span>]</span><br></pre></td></tr></table></figure>
-
-<h2 id="基于yolo-v8的coco模型训练helmet模型"><a href="#基于yolo-v8的coco模型训练helmet模型" class="headerlink" title="基于yolo-v8的coco模型训练helmet模型"></a>基于yolo-v8的coco模型训练helmet模型</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    model = YOLO(<span class="string">&#x27;yolov8n.pt&#x27;</span>)</span><br><span class="line">    model.to(<span class="string">&#x27;cuda&#x27;</span>)</span><br><span class="line">    model.train(data=<span class="string">&#x27;safehat.yaml&#x27;</span>, epochs=<span class="number">100</span>)</span><br><span class="line">    model.val()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-
-<h2 id="编写测试文件"><a href="#编写测试文件" class="headerlink" title="编写测试文件"></a>编写测试文件</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line">model = YOLO(<span class="string">&#x27;best.pt&#x27;</span>)</span><br><span class="line">model.predict(<span class="string">&#x27;testfile&#x27;</span>,save=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="/img/test.jpg" alt="原始图片"><br><img src="/img/predict.jpg" alt="运行后图片"></p>
-]]></content>
-      <categories>
-        <category>Yolo-v8</category>
-      </categories>
-      <tags>
-        <tag>Yolo-v8</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人工智能面试CSDN专栏</title>
-    <url>/2024/08/25/interview/</url>
-    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/126857351">https://blog.csdn.net/zzh516451964zzh/article/details/126857351</a></p>
-]]></content>
-      <categories>
-        <category>面试</category>
-      </categories>
-      <tags>
-        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
@@ -178,17 +189,6 @@
 ]]></content>
       <tags>
         <tag>更新日志</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实用工具</title>
-    <url>/2024/08/18/Tools/</url>
-    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
       </tags>
   </entry>
 </search>
