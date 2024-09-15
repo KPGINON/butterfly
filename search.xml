@@ -34,15 +34,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1>学习linux专用</h1>
-]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linear Regression</title>
     <url>/2024/08/15/LinearRegression/</url>
     <content><![CDATA[<h1>机器学习线性回归复现</h1>
@@ -92,17 +83,12 @@ $$</p>
       </tags>
   </entry>
   <entry>
-    <title>实用工具</title>
-    <url>/2024/08/18/Tools/</url>
-    <content><![CDATA[<h1>工具助手</h1>
-<h3 id="ClaudeShare-https-kelaode-ai">[ClaudeShare]<a href="https://kelaode.ai">https://kelaode.ai</a></h3>
-<h3 id="CSDNreader-https-doc-leonx-cn">[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1>学习linux专用</h1>
 ]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
       <tags>
-        <tag>工具</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -133,6 +119,20 @@ $$</p>
       </categories>
       <tags>
         <tag>教务自动登录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实用工具</title>
+    <url>/2024/08/18/Tools/</url>
+    <content><![CDATA[<h1>工具助手</h1>
+<h3 id="ClaudeShare-https-kelaode-ai">[ClaudeShare]<a href="https://kelaode.ai">https://kelaode.ai</a></h3>
+<h3 id="CSDNreader-https-doc-leonx-cn">[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
