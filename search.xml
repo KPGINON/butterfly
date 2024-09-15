@@ -3,9 +3,7 @@
   <entry>
     <title>数据结构</title>
     <url>/2024/08/19/DSlearning/</url>
-    <content><![CDATA[<h1>数据结构</h1>
-<h3 id="数据结构-https-totuma-cn">[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>
-]]></content>
+    <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h3 id="数据结构-https-totuma-cn"><a href="#数据结构-https-totuma-cn" class="headerlink" title="[数据结构]https://totuma.cn/"></a>[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>]]></content>
       <categories>
         <category>数据结构</category>
       </categories>
@@ -14,75 +12,45 @@
       </tags>
   </entry>
   <entry>
-    <title>教务自动登录</title>
-    <url>/2024/09/09/Spider/</url>
-    <content><![CDATA[<h1>教务自动登录</h1>
-<h2 id="由于tesseract-OCR模型没训练好，尚不支持识别验证码登录。">由于tesseract-OCR模型没训练好，尚不支持识别验证码登录。</h2>
-<h2 id="现仅支持强智教务，更改ID可以适配教务系统，具体方法查看selenium使用文档">现仅支持强智教务，更改ID可以适配教务系统，具体方法查看selenium使用文档</h2>
-<h2 id="引入所需模块">引入所需模块</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.service <span class="keyword">import</span> Service</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> random</span><br></pre></td></tr></table></figure>
-<h2 id="定义主函数">定义主函数</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br></pre></td></tr></table></figure>
-<h2 id="填写账号：">填写账号：</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">  accounts = &#123;</span><br><span class="line">      <span class="string">&quot;1&quot;</span>: &#123;<span class="string">&quot;username&quot;</span>: <span class="string">&quot;123123123&quot;</span>, <span class="string">&quot;password&quot;</span>: <span class="string">&quot;填入密码&quot;</span>&#125;,</span><br><span class="line">......</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="选择账号">选择账号:</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;请选择账号登录:&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;1: 账号&quot;</span>)</span><br><span class="line">choice = <span class="built_in">input</span>(<span class="string">&quot;请输入1-n之间的数字: &quot;</span>).strip()</span><br></pre></td></tr></table></figure>
-<h2 id="检查选择是否有效">检查选择是否有效</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> choice <span class="keyword">not</span> <span class="keyword">in</span> accounts:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;无效的选择，请输入1-4之间的数字。&quot;</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br></pre></td></tr></table></figure>
-<h2 id="获取对应的账号密码">获取对应的账号密码</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">username = accounts[choice][<span class="string">&quot;username&quot;</span>]</span><br><span class="line">   password = accounts[choice][<span class="string">&quot;password&quot;</span>]</span><br></pre></td></tr></table></figure>
-<h2 id="配置Selenium">配置Selenium</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">driver_path = <span class="string">&#x27;D:/chromedriver/chromedriver-win64/chromedriver.exe&#x27;</span>  <span class="comment"># 你的chromedriver路径</span></span><br><span class="line">   service = Service(driver_path)</span><br><span class="line">   options = Options()</span><br><span class="line">   driver = webdriver.Chrome(service=service, options=options)</span><br><span class="line">   driver.get(<span class="string">&#x27;jw_path&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="进行登录操作">进行登录操作</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># 输入用户名和密码</span></span><br><span class="line">        username_input = WebDriverWait(driver, <span class="number">20</span>).until(</span><br><span class="line">            EC.presence_of_element_located((By.ID, <span class="string">&quot;userAccount&quot;</span>))</span><br><span class="line">        )</span><br><span class="line">        password_input = WebDriverWait(driver, <span class="number">20</span>).until(</span><br><span class="line">            EC.presence_of_element_located((By.ID, <span class="string">&quot;userPassword&quot;</span>))</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 清空并填入用户名和密码</span></span><br><span class="line">        username_input.clear()</span><br><span class="line">        username_input.send_keys(username)</span><br><span class="line">        password_input.clear()</span><br><span class="line">        password_input.send_keys(password)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 显示验证码图片</span></span><br><span class="line">        captcha_img = WebDriverWait(driver, <span class="number">20</span>).until(</span><br><span class="line">            EC.presence_of_element_located((By.ID, <span class="string">&quot;SafeCodeImg&quot;</span>))</span><br><span class="line">        )</span><br><span class="line">        captcha_img.screenshot(<span class="string">&#x27;captcha.png&#x27;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 显示验证码图片路径</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;验证码图片已保存为 &#x27;captcha.png&#x27;。请查看该图片，并手动输入验证码。&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 等待用户输入验证码</span></span><br><span class="line">        captcha_text = <span class="built_in">input</span>(<span class="string">&quot;请输入验证码: &quot;</span>).strip()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 输入验证码</span></span><br><span class="line">        captcha_input = WebDriverWait(driver, <span class="number">20</span>).until(</span><br><span class="line">            EC.presence_of_element_located((By.ID, <span class="string">&quot;RANDOMCODE&quot;</span>))</span><br><span class="line">        )</span><br><span class="line">        captcha_input.clear()</span><br><span class="line">        captcha_input.send_keys(captcha_text)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 点击登录按钮</span></span><br><span class="line">        submit_button = WebDriverWait(driver, <span class="number">20</span>).until(</span><br><span class="line">            EC.element_to_be_clickable((By.CSS_SELECTOR, <span class="string">&quot;button.btn.btn-primary.login_btn&quot;</span>))</span><br><span class="line">        )</span><br><span class="line">        submit_button.click()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 等待页面完全加载</span></span><br><span class="line">        time.sleep(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 使用JavaScript点击指定的div元素</span></span><br><span class="line">        grid_div = WebDriverWait(driver, <span class="number">30</span>).until(</span><br><span class="line">            EC.presence_of_element_located((By.XPATH, <span class="string">&quot;//div[@class=&#x27;grid&#x27;]//p[text()=&#x27;学生选课中心&#x27;]&quot;</span>))</span><br><span class="line">        )</span><br><span class="line">        driver.execute_script(<span class="string">&quot;arguments[0].scrollIntoView(true);&quot;</span>, grid_div)</span><br><span class="line">        driver.execute_script(<span class="string">&quot;arguments[0].click();&quot;</span>, grid_div)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;账号 <span class="subst">&#123;username&#125;</span> 登录成功，并点击了 &#x27;学生选课中心&#x27;！&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;账号 <span class="subst">&#123;username&#125;</span> 登录失败: <span class="subst">&#123;<span class="built_in">str</span>(e)&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 随机等待时间</span></span><br><span class="line">    time.sleep(random.uniform(<span class="number">1</span>, <span class="number">3</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 保留浏览器，方便查看结果</span></span><br><span class="line">    time.sleep(<span class="number">200</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 关闭浏览器</span></span><br><span class="line">    driver.quit()</span><br><span class="line">    </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>教务自动登录</category>
-      </categories>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
       <tags>
-        <tag>教务自动登录</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
     <title>Linear Regression</title>
     <url>/2024/08/15/LinearRegression/</url>
-    <content><![CDATA[<h1>机器学习线性回归复现</h1>
-<h2 id="预测函数">预测函数</h2>
-<p>$$<br>
-y_\theta(x)=\theta_0x+\theta_1b<br>
-$$</p>
-<h3 id="n元线性回归">n元线性回归</h3>
-<p>$$<br>
-h_\theta(x)=\theta_0+\theta_1x1+\theta_2x2<br>
-$$</p>
-<p>$$<br>
-h_\theta(x)=\sum^n_{i=0}{\theta_ix_i}= \theta^Tx<br>
-$$</p>
-<h2 id="损失函数-cost-function">损失函数 cost function</h2>
-<p>$$<br>
-J(\theta_0,\theta_1,…,\theta_n) = {1\over{2m}}\sum^{m}_{i=1}(h\theta(x^i)-y^i)^2<br>
-$$</p>
-<h2 id="梯度下降法">梯度下降法</h2>
-<p>$$<br>
-\theta_j := \theta_j-\alpha{\partial\over\partial\theta_j}(\theta_0,\theta_i)<br>
-$$</p>
-<h2 id="Python实现">Python实现</h2>
-<p>安装相关库</p>
+    <content><![CDATA[<h1 id="机器学习线性回归复现"><a href="#机器学习线性回归复现" class="headerlink" title="机器学习线性回归复现"></a>机器学习线性回归复现</h1><h2 id="预测函数"><a href="#预测函数" class="headerlink" title="预测函数"></a>预测函数</h2><p>$$<br>y_\theta(x)&#x3D;\theta_0x+\theta_1b<br>$$</p>
+<h3 id="n元线性回归"><a href="#n元线性回归" class="headerlink" title="n元线性回归"></a>n元线性回归</h3><p>$$<br>h_\theta(x)&#x3D;\theta_0+\theta_1x1+\theta_2x2<br>$$</p>
+<p>$$<br>h_\theta(x)&#x3D;\sum^n_{i&#x3D;0}{\theta_ix_i}&#x3D; \theta^Tx<br>$$</p>
+<h2 id="损失函数-cost-function"><a href="#损失函数-cost-function" class="headerlink" title="损失函数 cost function"></a>损失函数 cost function</h2><p>$$<br>J(\theta_0,\theta_1,….,\theta_n) &#x3D; {1\over{2m}}\sum^{m}_{i&#x3D;1}(h\theta(x^i)-y^i)^2<br>$$</p>
+<h2 id="梯度下降法"><a href="#梯度下降法" class="headerlink" title="梯度下降法"></a>梯度下降法</h2><p>$$<br>\theta_j :&#x3D; \theta_j-\alpha{\partial\over\partial\theta_j}(\theta_0,\theta_i)<br>$$</p>
+<h2 id="Python实现"><a href="#Python实现" class="headerlink" title="Python实现"></a>Python实现</h2><p>安装相关库</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LinearRegression</span><br></pre></td></tr></table></figure>
+
 <p>准备数据</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = np.array([[<span class="number">32</span>, <span class="number">31</span>], [<span class="number">53</span>, <span class="number">68</span>], [<span class="number">61</span>, <span class="number">62</span>], [<span class="number">47</span>, <span class="number">71</span>], [<span class="number">59</span>, <span class="number">87</span>], [<span class="number">55</span>, <span class="number">78</span>], [<span class="number">52</span>, <span class="number">79</span>], [<span class="number">39</span>, <span class="number">59</span>], [<span class="number">48</span>, <span class="number">75</span>], [<span class="number">52</span>, <span class="number">71</span>],</span><br><span class="line">                     [<span class="number">45</span>, <span class="number">55</span>], [<span class="number">54</span>, <span class="number">82</span>], [<span class="number">44</span>, <span class="number">62</span>], [<span class="number">58</span>, <span class="number">75</span>], [<span class="number">56</span>, <span class="number">81</span>], [<span class="number">48</span>, <span class="number">60</span>], [<span class="number">44</span>, <span class="number">82</span>], [<span class="number">60</span>, <span class="number">97</span>], [<span class="number">45</span>, <span class="number">48</span>], [<span class="number">38</span>, <span class="number">56</span>],</span><br><span class="line">                     [<span class="number">66</span>, <span class="number">83</span>], [<span class="number">65</span>, <span class="number">118</span>], [<span class="number">47</span>, <span class="number">57</span>], [<span class="number">41</span>, <span class="number">51</span>], [<span class="number">51</span>, <span class="number">75</span>], [<span class="number">59</span>, <span class="number">74</span>], [<span class="number">57</span>, <span class="number">95</span>], [<span class="number">63</span>, <span class="number">95</span>], [<span class="number">46</span>, <span class="number">79</span>],</span><br><span class="line">                     [<span class="number">50</span>, <span class="number">83</span>]])</span><br></pre></td></tr></table></figure>
+
 <p>读取数据</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = data[:,<span class="number">0</span>]</span><br><span class="line">y = data[:,<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+
 <p>定义损失函数</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">cost</span> (w,b,data):</span><br><span class="line">    total_cost = <span class="number">0</span></span><br><span class="line">    m = <span class="built_in">len</span>(data)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(m):</span><br><span class="line">        x = data[i, <span class="number">0</span>]</span><br><span class="line">        y = data[i, <span class="number">1</span>]</span><br><span class="line">        total_cost += (w * x + b) - y</span><br><span class="line">    <span class="keyword">return</span> total_cost / m</span><br></pre></td></tr></table></figure>
+
 <p>对数据进行reshape</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_new = x.reshape(-<span class="number">1</span>,<span class="number">1</span>)</span><br><span class="line">y_new = y.reshape(-<span class="number">1</span>,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
 <p>使用模型获取w,b参数</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">lr = LinearRegression()</span><br><span class="line">lr.fit(x_new,y_new)</span><br><span class="line">w = lr.coef_[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line">b = lr.intercept_[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+
 <p>调用损失函数</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cost = cost(w, b, data)</span><br></pre></td></tr></table></figure>
+
 <p>绘制图形</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.scatter(x,y)</span><br><span class="line">pred_y = w * x + b</span><br><span class="line">plt.plot(x,pred_y,c=<span class="string">&#x27;r&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
 <p><img src="/img/linear_regression.png" alt="运行结果"></p>
 ]]></content>
       <categories>
@@ -93,99 +61,42 @@ $$</p>
       </tags>
   </entry>
   <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1>学习linux专用</h1>
+    <title>教务自动登录</title>
+    <url>/2024/09/09/Spider/</url>
+    <content><![CDATA[<h1 id="教务自动登录"><a href="#教务自动登录" class="headerlink" title="教务自动登录"></a>教务自动登录</h1><h2 id="由于tesseract-OCR模型没训练好，尚不支持识别验证码登录。"><a href="#由于tesseract-OCR模型没训练好，尚不支持识别验证码登录。" class="headerlink" title="由于tesseract-OCR模型没训练好，尚不支持识别验证码登录。"></a>由于tesseract-OCR模型没训练好，尚不支持识别验证码登录。</h2><h2 id="现仅支持强智教务，更改ID可以适配教务系统，具体方法查看selenium使用文档"><a href="#现仅支持强智教务，更改ID可以适配教务系统，具体方法查看selenium使用文档" class="headerlink" title="现仅支持强智教务，更改ID可以适配教务系统，具体方法查看selenium使用文档"></a>现仅支持强智教务，更改ID可以适配教务系统，具体方法查看selenium使用文档</h2><h2 id="引入所需模块"><a href="#引入所需模块" class="headerlink" title="引入所需模块"></a>引入所需模块</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.service <span class="keyword">import</span> Service</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> random</span><br></pre></td></tr></table></figure>
+
+<h2 id="定义主函数"><a href="#定义主函数" class="headerlink" title="定义主函数"></a>定义主函数</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br></pre></td></tr></table></figure>
+
+<h2 id="填写账号："><a href="#填写账号：" class="headerlink" title="填写账号："></a>填写账号：</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">  accounts = &#123;</span><br><span class="line">      <span class="string">&quot;1&quot;</span>: &#123;<span class="string">&quot;username&quot;</span>: <span class="string">&quot;123123123&quot;</span>, <span class="string">&quot;password&quot;</span>: <span class="string">&quot;填入密码&quot;</span>&#125;,</span><br><span class="line">......</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="选择账号"><a href="#选择账号" class="headerlink" title="选择账号:"></a>选择账号:</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;请选择账号登录:&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;1: 账号&quot;</span>)</span><br><span class="line">choice = <span class="built_in">input</span>(<span class="string">&quot;请输入1-n之间的数字: &quot;</span>).strip()</span><br></pre></td></tr></table></figure>
+
+<h2 id="检查选择是否有效"><a href="#检查选择是否有效" class="headerlink" title="检查选择是否有效"></a>检查选择是否有效</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> choice <span class="keyword">not</span> <span class="keyword">in</span> accounts:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;无效的选择，请输入1-4之间的数字。&quot;</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="获取对应的账号密码"><a href="#获取对应的账号密码" class="headerlink" title="获取对应的账号密码"></a>获取对应的账号密码</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">username = accounts[choice][<span class="string">&quot;username&quot;</span>]</span><br><span class="line">   password = accounts[choice][<span class="string">&quot;password&quot;</span>]</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置Selenium"><a href="#配置Selenium" class="headerlink" title="配置Selenium"></a>配置Selenium</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">driver_path = <span class="string">&#x27;D:/chromedriver/chromedriver-win64/chromedriver.exe&#x27;</span>  <span class="comment"># 你的chromedriver路径</span></span><br><span class="line">   service = Service(driver_path)</span><br><span class="line">   options = Options()</span><br><span class="line">   driver = webdriver.Chrome(service=service, options=options)</span><br><span class="line">   driver.get(<span class="string">&#x27;jw_path&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="进行登录操作"><a href="#进行登录操作" class="headerlink" title="进行登录操作"></a>进行登录操作</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># 输入用户名和密码</span></span><br><span class="line">        username_input = WebDriverWait(driver, <span class="number">20</span>).until(</span><br><span class="line">            EC.presence_of_element_located((By.ID, <span class="string">&quot;userAccount&quot;</span>))</span><br><span class="line">        )</span><br><span class="line">        password_input = WebDriverWait(driver, <span class="number">20</span>).until(</span><br><span class="line">            EC.presence_of_element_located((By.ID, <span class="string">&quot;userPassword&quot;</span>))</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 清空并填入用户名和密码</span></span><br><span class="line">        username_input.clear()</span><br><span class="line">        username_input.send_keys(username)</span><br><span class="line">        password_input.clear()</span><br><span class="line">        password_input.send_keys(password)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 显示验证码图片</span></span><br><span class="line">        captcha_img = WebDriverWait(driver, <span class="number">20</span>).until(</span><br><span class="line">            EC.presence_of_element_located((By.ID, <span class="string">&quot;SafeCodeImg&quot;</span>))</span><br><span class="line">        )</span><br><span class="line">        captcha_img.screenshot(<span class="string">&#x27;captcha.png&#x27;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 显示验证码图片路径</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;验证码图片已保存为 &#x27;captcha.png&#x27;。请查看该图片，并手动输入验证码。&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 等待用户输入验证码</span></span><br><span class="line">        captcha_text = <span class="built_in">input</span>(<span class="string">&quot;请输入验证码: &quot;</span>).strip()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 输入验证码</span></span><br><span class="line">        captcha_input = WebDriverWait(driver, <span class="number">20</span>).until(</span><br><span class="line">            EC.presence_of_element_located((By.ID, <span class="string">&quot;RANDOMCODE&quot;</span>))</span><br><span class="line">        )</span><br><span class="line">        captcha_input.clear()</span><br><span class="line">        captcha_input.send_keys(captcha_text)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 点击登录按钮</span></span><br><span class="line">        submit_button = WebDriverWait(driver, <span class="number">20</span>).until(</span><br><span class="line">            EC.element_to_be_clickable((By.CSS_SELECTOR, <span class="string">&quot;button.btn.btn-primary.login_btn&quot;</span>))</span><br><span class="line">        )</span><br><span class="line">        submit_button.click()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 等待页面完全加载</span></span><br><span class="line">        time.sleep(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 使用JavaScript点击指定的div元素</span></span><br><span class="line">        grid_div = WebDriverWait(driver, <span class="number">30</span>).until(</span><br><span class="line">            EC.presence_of_element_located((By.XPATH, <span class="string">&quot;//div[@class=&#x27;grid&#x27;]//p[text()=&#x27;学生选课中心&#x27;]&quot;</span>))</span><br><span class="line">        )</span><br><span class="line">        driver.execute_script(<span class="string">&quot;arguments[0].scrollIntoView(true);&quot;</span>, grid_div)</span><br><span class="line">        driver.execute_script(<span class="string">&quot;arguments[0].click();&quot;</span>, grid_div)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;账号 <span class="subst">&#123;username&#125;</span> 登录成功，并点击了 &#x27;学生选课中心&#x27;！&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;账号 <span class="subst">&#123;username&#125;</span> 登录失败: <span class="subst">&#123;<span class="built_in">str</span>(e)&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 随机等待时间</span></span><br><span class="line">    time.sleep(random.uniform(<span class="number">1</span>, <span class="number">3</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 保留浏览器，方便查看结果</span></span><br><span class="line">    time.sleep(<span class="number">200</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 关闭浏览器</span></span><br><span class="line">    driver.quit()</span><br><span class="line">    </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+
 ]]></content>
+      <categories>
+        <category>教务自动登录</category>
+      </categories>
       <tags>
-        <tag>linux</tag>
+        <tag>教务自动登录</tag>
       </tags>
   </entry>
   <entry>
     <title>实用工具</title>
     <url>/2024/08/18/Tools/</url>
-    <content><![CDATA[<h1>工具助手</h1>
-<h3 id="ClaudeShare-https-kelaode-ai">[ClaudeShare]<a href="https://kelaode.ai">https://kelaode.ai</a></h3>
-<h3 id="CSDNreader-https-doc-leonx-cn">[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>
-]]></content>
+    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
       <categories>
         <category>工具</category>
       </categories>
       <tags>
         <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习记录</title>
-    <url>/2024/08/18/DeepLearning_record/</url>
-    <content><![CDATA[<h1>深度学习记录</h1>
-<h3 id="Github学习链接-https-github-com-AccumulateMore-CV">[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3>
-<h3 id="DeepLearning复现-https-github-com-lucidrains">[DeepLearning复现]<a href="https://github.com/lucidrains">https://github.com/lucidrains</a></h3>
-<h3 id="动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md">[动手学深度学习]<a href="https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md">https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md</a></h3>
-<h3 id="官方网站-https-zh-d2l-ai-chapter-preface-index-html">[官方网站]<a href="https://zh.d2l.ai/chapter_preface/index.html">https://zh.d2l.ai/chapter_preface/index.html</a></h3>
-<h3 id="GitHub源码-https-github-com-d2l-ai-d2l-zh">[GitHub源码]<a href="https://github.com/d2l-ai/d2l-zh">https://github.com/d2l-ai/d2l-zh</a></h3>
-<h3 id="哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497">[哔哩哔哩视频课]<a href="https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497">https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497</a></h3>
-<p>2024/8/18</p>
-<p>​	1. 完成conda、pytorch环境配置</p>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Yolo_test</title>
-    <url>/2024/09/05/Yolo-fix/</url>
-    <content><![CDATA[<h1>yolo</h1>
-<h2 id="检查显卡可用性">检查显卡可用性</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.is_available()</span><br><span class="line">cuda是否可用；</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.device_count()</span><br><span class="line">返回gpu数量；</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.get_device_name(0)</span><br><span class="line">返回gpu名字，设备索引默认从0开始；</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.current_device()</span><br><span class="line">返回当前设备索引；</span><br></pre></td></tr></table></figure>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>torch.cuda.is_available()<br>
-False</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>nvcc -V 检查cuda版本</p>
-<h2 id="Known-issue-with-inference-using-CPU-on-Windows-for-PyTorch-2-4-0">Known issue with inference using CPU on Windows for PyTorch 2.4.0</h2>
-<h2 id="Fixes">Fixes</h2>
-<ol>
-<li>Downgrade PyTorch (CPU) to a previous version</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cpu</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>Install PyTorch with CUDA support, requires NVIDIA GPU with CUDA support</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
-<p>ERROR: pip’s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.<br>
-ultralytics 8.2.87 requires torch&lt;2.4.0,&gt;=1.8.0; sys_platform == “win32”, but you have torch 2.4.1+cu121 which is incompatible.</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Yolo-v8</category>
-      </categories>
-      <tags>
-        <tag>Yolo-v8</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Yolo</title>
-    <url>/2024/09/04/Yolo/</url>
-    <content><![CDATA[<h1>YoLo-v8</h1>
-<h3 id="Yolo-v8-train-https-docs-ultralytics-com-modes-train-introduction">[Yolo-v8_train]<a href="https://docs.ultralytics.com/modes/train/#introduction">https://docs.ultralytics.com/modes/train/#introduction</a></h3>
-<h3 id=""></h3>
-]]></content>
-      <categories>
-        <category>Yolo-v8</category>
-      </categories>
-      <tags>
-        <tag>Yolo-v8</tag>
       </tags>
   </entry>
   <entry>
@@ -201,11 +112,70 @@ ultralytics 8.2.87 requires torch&lt;2.4.0,&gt;=1.8.0; sys_platform == “win32�
       </tags>
   </entry>
   <entry>
+    <title>Yolo整合</title>
+    <url>/2024/09/06/yolo-0/</url>
+    <content><![CDATA[<h1 id="Yolo整合"><a href="#Yolo整合" class="headerlink" title="Yolo整合"></a>Yolo整合</h1><h2 id="helmet检测"><a href="#helmet检测" class="headerlink" title="helmet检测"></a>helmet检测</h2><h2 id="准备数据集"><a href="#准备数据集" class="headerlink" title="准备数据集"></a>准备数据集</h2><p>kaggle中yolo格式的helmet数据集</p>
+<h2 id="导入yolo-v8"><a href="#导入yolo-v8" class="headerlink" title="导入yolo-v8"></a>导入yolo-v8</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ultralytics</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装cuda、torch…"><a href="#安装cuda、torch…" class="headerlink" title="安装cuda、torch…"></a>安装cuda、torch…</h2><h1 id="…"><a href="#…" class="headerlink" title="…."></a>….</h1><p>[error]<a href="https://zzggo.com/2024/09/05/Yolo-fix/">https://zzggo.com/2024/09/05/Yolo-fix/</a></p>
+<h2 id="准备yaml文件"><a href="#准备yaml文件" class="headerlink" title="准备yaml文件"></a>准备yaml文件</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">train:</span> <span class="string">...</span></span><br><span class="line"><span class="attr">val:</span> <span class="string">...</span></span><br><span class="line"><span class="string">test</span> <span class="string">...</span></span><br><span class="line"><span class="string">nc</span> <span class="string">=</span> <span class="number">10</span></span><br><span class="line"><span class="attr">names:</span> [<span class="string">Hardhat</span>, <span class="string">Mask</span>, <span class="literal">NO</span><span class="string">-Hardhat</span>, <span class="literal">NO</span><span class="string">-Mask</span>, <span class="literal">NO</span><span class="string">-Safety</span> <span class="string">Vest</span>, <span class="string">Person</span>, <span class="string">Safety</span> <span class="string">Cone</span>, <span class="string">Safety</span> <span class="string">Vest</span>, <span class="string">machinery</span>, <span class="string">vehicle</span>]</span><br></pre></td></tr></table></figure>
+
+<h2 id="基于yolo-v8的coco模型训练helmet模型"><a href="#基于yolo-v8的coco模型训练helmet模型" class="headerlink" title="基于yolo-v8的coco模型训练helmet模型"></a>基于yolo-v8的coco模型训练helmet模型</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    model = YOLO(<span class="string">&#x27;yolov8n.pt&#x27;</span>)</span><br><span class="line">    model.to(<span class="string">&#x27;cuda&#x27;</span>)</span><br><span class="line">    model.train(data=<span class="string">&#x27;safehat.yaml&#x27;</span>, epochs=<span class="number">100</span>)</span><br><span class="line">    model.val()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+<h2 id="编写测试文件"><a href="#编写测试文件" class="headerlink" title="编写测试文件"></a>编写测试文件</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line">model = YOLO(<span class="string">&#x27;best.pt&#x27;</span>)</span><br><span class="line">model.predict(<span class="string">&#x27;testfile&#x27;</span>,save=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="/img/test.jpg" alt="原始图片"><br><img src="/img/predict.jpg" alt="运行后图片"></p>
+<h3 id="附："><a href="#附：" class="headerlink" title="附："></a>附：</h3><h2 id="检查显卡可用性"><a href="#检查显卡可用性" class="headerlink" title="检查显卡可用性"></a>检查显卡可用性</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.is_available()</span><br><span class="line">cuda是否可用；</span><br><span class="line">torch.cuda.device_count()</span><br><span class="line">返回gpu数量；</span><br><span class="line">torch.cuda.get_device_name(0)</span><br><span class="line">返回gpu名字，设备索引默认从0开始；</span><br><span class="line">torch.cuda.current_device()</span><br><span class="line">返回当前设备索引；</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<blockquote>
+<blockquote>
+<p>torch.cuda.is_available()<br>False</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>nvcc -V 检查cuda版本</p>
+<h2 id="Known-issue-with-inference-using-CPU-on-Windows-for-PyTorch-2-4-0"><a href="#Known-issue-with-inference-using-CPU-on-Windows-for-PyTorch-2-4-0" class="headerlink" title="Known issue with inference using CPU on Windows for PyTorch 2.4.0"></a>Known issue with inference using CPU on Windows for PyTorch 2.4.0</h2><h2 id="Fixes"><a href="#Fixes" class="headerlink" title="Fixes"></a>Fixes</h2><ol>
+<li>Downgrade PyTorch (CPU) to a previous version</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cpu</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="2">
+<li>Install PyTorch with CUDA support, requires NVIDIA GPU with CUDA support</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
+
+<p>ERROR: pip’s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.<br>ultralytics 8.2.87 requires torch&lt;2.4.0,&gt;&#x3D;1.8.0; sys_platform &#x3D;&#x3D; “win32”, but you have torch 2.4.1+cu121 which is incompatible.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121</span><br><span class="line">pip uninstall torch torchvision torchaudio -y</span><br><span class="line">pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
+
+<h3 id="yolo-document"><a href="#yolo-document" class="headerlink" title="yolo.document"></a>yolo.document</h3><p>**### [<strong><strong>Yolo-v8_train</strong></strong>]&lt;**<a href="https://docs.ultralytics.com/modes/train/">https://docs.ultralytics.com/modes/train/</a></p>
+]]></content>
+      <categories>
+        <category>Yolo-v8</category>
+      </categories>
+      <tags>
+        <tag>Yolo-v8</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习记录</title>
+    <url>/2024/08/18/DeepLearning_record/</url>
+    <content><![CDATA[<h1 id="深度学习记录"><a href="#深度学习记录" class="headerlink" title="深度学习记录"></a>深度学习记录</h1><h3 id="Github学习链接-https-github-com-AccumulateMore-CV"><a href="#Github学习链接-https-github-com-AccumulateMore-CV" class="headerlink" title="[Github学习链接]https://github.com/AccumulateMore/CV"></a>[Github学习链接]<a href="https://github.com/AccumulateMore/CV">https://github.com/AccumulateMore/CV</a></h3><h3 id="DeepLearning复现-https-github-com-lucidrains"><a href="#DeepLearning复现-https-github-com-lucidrains" class="headerlink" title="[DeepLearning复现]https://github.com/lucidrains"></a>[DeepLearning复现]<a href="https://github.com/lucidrains">https://github.com/lucidrains</a></h3><h3 id="动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md"><a href="#动手学深度学习-https-github-com-ShusenTang-Dive-into-DL-PyTorch-blob-master-docs-chapter02-prerequisite-2-2-tensor-md" class="headerlink" title="[动手学深度学习]https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md"></a>[动手学深度学习]<a href="https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md">https://github.com/ShusenTang/Dive-into-DL-PyTorch/blob/master/docs/chapter02_prerequisite/2.2_tensor.md</a></h3><h3 id="官方网站-https-zh-d2l-ai-chapter-preface-index-html"><a href="#官方网站-https-zh-d2l-ai-chapter-preface-index-html" class="headerlink" title="[官方网站]https://zh.d2l.ai/chapter_preface/index.html"></a>[官方网站]<a href="https://zh.d2l.ai/chapter_preface/index.html">https://zh.d2l.ai/chapter_preface/index.html</a></h3><h3 id="GitHub源码-https-github-com-d2l-ai-d2l-zh"><a href="#GitHub源码-https-github-com-d2l-ai-d2l-zh" class="headerlink" title="[GitHub源码]https://github.com/d2l-ai/d2l-zh"></a>[GitHub源码]<a href="https://github.com/d2l-ai/d2l-zh">https://github.com/d2l-ai/d2l-zh</a></h3><h3 id="哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497"><a href="#哔哩哔哩视频课-https-space-bilibili-com-1567748478-channel-seriesdetail-sid-358497" class="headerlink" title="[哔哩哔哩视频课]https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497"></a>[哔哩哔哩视频课]<a href="https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497">https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497</a></h3><p>2024&#x2F;8&#x2F;18</p>
+<p>​	1. 完成conda、pytorch环境配置</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>更新日志</title>
     <url>/2024/08/16/update/</url>
-    <content><![CDATA[<h1>更新日志</h1>
-<h2 id="2024-8-16">2024/8/16</h2>
-<ol>
+    <content><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024&#x2F;8&#x2F;16"></a>2024&#x2F;8&#x2F;16</h2><ol>
 <li>添加新域名解析，解决waline国内无法评论问题</li>
 <li>修复post无法显示图片</li>
 <li>修复CDN导致右下角按钮失效问题</li>
@@ -213,34 +183,6 @@ ultralytics 8.2.87 requires torch&lt;2.4.0,&gt;=1.8.0; sys_platform == “win32�
 ]]></content>
       <tags>
         <tag>更新日志</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>yolo部分</title>
-    <url>/2024/09/06/yolo-0/</url>
-    <content><![CDATA[<h1>Yolo-helmet</h1>
-<h2 id="准备数据集">准备数据集</h2>
-<p>kaggle中yolo格式的helmet数据集</p>
-<h2 id="导入yolo-v8">导入yolo-v8</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ultralytics</span><br></pre></td></tr></table></figure>
-<h2 id="安装cuda、torch…">安装cuda、torch…</h2>
-<h1>…</h1>
-<p>[error]<a href="https://zzggo.com/2024/09/05/Yolo-fix/">https://zzggo.com/2024/09/05/Yolo-fix/</a></p>
-<h2 id="准备yaml文件">准备yaml文件</h2>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">train:</span> <span class="string">...</span></span><br><span class="line"><span class="attr">val:</span> <span class="string">...</span></span><br><span class="line"><span class="string">test</span> <span class="string">...</span></span><br><span class="line"><span class="string">nc</span> <span class="string">=</span> <span class="number">10</span></span><br><span class="line"><span class="attr">names:</span> [<span class="string">Hardhat</span>, <span class="string">Mask</span>, <span class="literal">NO</span><span class="string">-Hardhat</span>, <span class="literal">NO</span><span class="string">-Mask</span>, <span class="literal">NO</span><span class="string">-Safety</span> <span class="string">Vest</span>, <span class="string">Person</span>, <span class="string">Safety</span> <span class="string">Cone</span>, <span class="string">Safety</span> <span class="string">Vest</span>, <span class="string">machinery</span>, <span class="string">vehicle</span>]</span><br></pre></td></tr></table></figure>
-<h2 id="基于yolo-v8的coco模型训练helmet模型">基于yolo-v8的coco模型训练helmet模型</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    model = YOLO(<span class="string">&#x27;yolov8n.pt&#x27;</span>)</span><br><span class="line">    model.to(<span class="string">&#x27;cuda&#x27;</span>)</span><br><span class="line">    model.train(data=<span class="string">&#x27;safehat.yaml&#x27;</span>, epochs=<span class="number">100</span>)</span><br><span class="line">    model.val()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-<h2 id="编写测试文件">编写测试文件</h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line">model = YOLO(<span class="string">&#x27;best.pt&#x27;</span>)</span><br><span class="line">model.predict(<span class="string">&#x27;testfile&#x27;</span>,save=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="结果">结果</h2>
-<p><img src="/img/test.jpg" alt="原始图片"><br>
-<img src="/img/predict.jpg" alt="运行后图片"></p>
-]]></content>
-      <categories>
-        <category>Yolo-v8</category>
-      </categories>
-      <tags>
-        <tag>Yolo-v8</tag>
       </tags>
   </entry>
 </search>
