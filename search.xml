@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Linux学习</title>
-    <url>/2024/08/14/Linux/</url>
-    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数据结构</title>
     <url>/2024/08/19/DSlearning/</url>
     <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h3 id="数据结构-https-totuma-cn"><a href="#数据结构-https-totuma-cn" class="headerlink" title="[数据结构]https://totuma.cn/"></a>[数据结构]<a href="https://totuma.cn/">https://totuma.cn/</a></h3>]]></content>
@@ -74,26 +66,11 @@
       </tags>
   </entry>
   <entry>
-    <title>人工智能面试CSDN专栏</title>
-    <url>/2024/08/25/interview/</url>
-    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/126857351">https://blog.csdn.net/zzh516451964zzh/article/details/126857351</a></p>
-]]></content>
-      <categories>
-        <category>面试</category>
-      </categories>
+    <title>Linux学习</title>
+    <url>/2024/08/14/Linux/</url>
+    <content><![CDATA[<h1 id="学习linux专用"><a href="#学习linux专用" class="headerlink" title="学习linux专用"></a>学习linux专用</h1>]]></content>
       <tags>
-        <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实用工具</title>
-    <url>/2024/08/18/Tools/</url>
-    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -125,7 +102,30 @@
       </tags>
   </entry>
   <entry>
-    <title>自动登录教务v2</title>
+    <title>实用工具</title>
+    <url>/2024/08/18/Tools/</url>
+    <content><![CDATA[<h1 id="工具助手"><a href="#工具助手" class="headerlink" title="工具助手"></a>工具助手</h1><h3 id="ClaudeShare-https-kelaode-ai"><a href="#ClaudeShare-https-kelaode-ai" class="headerlink" title="[ClaudeShare]https://kelaode.ai"></a>[ClaudeShare]<a href="https://kelaode.ai/">https://kelaode.ai</a></h3><h3 id="CSDNreader-https-doc-leonx-cn"><a href="#CSDNreader-https-doc-leonx-cn" class="headerlink" title="[CSDNreader]https://doc.leonx.cn/"></a>[CSDNreader]<a href="https://doc.leonx.cn/">https://doc.leonx.cn/</a></h3>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人工智能面试CSDN专栏</title>
+    <url>/2024/08/25/interview/</url>
+    <content><![CDATA[<p>[面试]<a href="https://blog.csdn.net/zzh516451964zzh/article/details/126857351">https://blog.csdn.net/zzh516451964zzh/article/details/126857351</a></p>
+]]></content>
+      <categories>
+        <category>面试</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>教务自动登录v2</title>
     <url>/2024/09/16/login/</url>
     <content><![CDATA[<h2 id="基于-https-zzggo-com-2024-09-09-Spider-更新第二版，实现tesseract-OCR提高精准度后自动识别验证码"><a href="#基于-https-zzggo-com-2024-09-09-Spider-更新第二版，实现tesseract-OCR提高精准度后自动识别验证码" class="headerlink" title="基于[]https://zzggo.com/2024/09/09/Spider/更新第二版，实现tesseract-OCR提高精准度后自动识别验证码"></a>基于[]<a href="https://zzggo.com/2024/09/09/Spider/">https://zzggo.com/2024/09/09/Spider/</a>更新第二版，实现tesseract-OCR提高精准度后自动识别验证码</h2><h2 id="准备验证码图片"><a href="#准备验证码图片" class="headerlink" title="准备验证码图片"></a>准备验证码图片</h2><h3 id="创建image-get-py，从教务下载100张验证码用于提高精准度"><a href="#创建image-get-py，从教务下载100张验证码用于提高精准度" class="headerlink" title="创建image_get.py，从教务下载100张验证码用于提高精准度"></a>创建image_get.py，从教务下载100张验证码用于提高精准度</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> BytesIO</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="comment"># 创建保存验证码图片的文件夹</span></span><br><span class="line">save_path = <span class="string">r&quot;C:\Users\21195\Desktop\OCR_image_2&quot;</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(save_path):</span><br><span class="line">    os.makedirs(save_path)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 页面 URL</span></span><br><span class="line">page_url = <span class="string">&quot;https://jw.educationgroup.cn/gzasc_jsxsd/&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 循环100次</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">    <span class="comment"># 获取网页内容</span></span><br><span class="line">    response = requests.get(page_url)</span><br><span class="line">    response.raise_for_status()  <span class="comment"># 确保请求成功</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 解析网页内容</span></span><br><span class="line">    soup = BeautifulSoup(response.text, <span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 找到验证码图片的 URL</span></span><br><span class="line">    img_tag = soup.find(<span class="string">&#x27;img&#x27;</span>, &#123;<span class="string">&#x27;id&#x27;</span>: <span class="string">&#x27;SafeCodeImg&#x27;</span>&#125;)</span><br><span class="line">    <span class="keyword">if</span> img_tag <span class="keyword">and</span> img_tag.has_attr(<span class="string">&#x27;src&#x27;</span>):</span><br><span class="line">        img_url = img_tag[<span class="string">&#x27;src&#x27;</span>]</span><br><span class="line">        img_url = <span class="string">f&quot;https://jw.educationgroup.cn<span class="subst">&#123;img_url&#125;</span>&quot;</span>  <span class="comment"># 拼接完整的 URL</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 下载验证码图片</span></span><br><span class="line">        img_response = requests.get(img_url)</span><br><span class="line">        img_response.raise_for_status()  <span class="comment"># 确保请求成功</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 保存验证码图片</span></span><br><span class="line">        img = Image.<span class="built_in">open</span>(BytesIO(img_response.content))</span><br><span class="line">        img_path = os.path.join(save_path, <span class="string">f&quot;verifycode_<span class="subst">&#123;i + <span class="number">1</span>&#125;</span>.png&quot;</span>)</span><br><span class="line">        img.save(img_path)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;第 <span class="subst">&#123;i + <span class="number">1</span>&#125;</span> 张验证码已保存到 <span class="subst">&#123;img_path&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;未找到验证码图片。&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 短暂等待，避免过于频繁的请求</span></span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
